@@ -150,3 +150,39 @@ export function mergeSnapshot(previous, incoming, options = {}) {
     diff: { added, removed, edited },
   };
 }
+
+export function verifySnapshot(snapshot) {
+  const errors = [];
+  if (!snapshot?.thread?.id || !snapshot?.thread?.url) {
+    return { ok: false, errors: ["snapshot has no thread id/url"] };
+  }
+  const messages = snapshot.messages;
+  if (!Array.isArray(messages)) return { ok: false, errors: ["snapshot has no messages array"] };
+
+  if (snapshot.messageCount !== messages.length) {
+    errors.push(`messageCount ${snapshot.messageCount} does not match ${messages.length} messages`);
+  }
+
+  const ids = new Set();
+  for (const message of messages) {
+    if (ids.has(message?.id)) errors.push(`duplicate message id ${message.id}`);
+    if (message?.id != null) ids.add(message.id);
+
+    for (const field of ["author", "authorKey", "ts", "url", "content"]) {
+      if (message?.[field] === undefined || message?.[field] === null) {
+        errors.push(`message ${message?.id} is missing ${field}`);
+      }
+    }
+    const expectedUrl = `${String(snapshot.thread.url).replace(/\/+$/, "")}/${message?.id}`;
+    if (message?.url !== expectedUrl) {
+      errors.push(`message ${message?.id} has an unexpected url ${message?.url}`);
+    }
+    for (const attachment of message?.attachments ?? []) {
+      if (attachment.url) errors.push(`message ${message.id} attachment carries a CDN url`);
+    }
+  }
+
+  if (!ids.has(String(snapshot.thread.id))) errors.push("starter message is missing");
+
+  return { ok: errors.length === 0, errors };
+}
