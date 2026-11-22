@@ -1,5 +1,5 @@
 import { createSearch, getContext, parseUrlState, toUrlState } from "./lib/search-core.js";
-import { formatTimestamp, renderContext, renderResult } from "./lib/dom.js";
+import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js";
 
 const $ = (id) => document.getElementById(id);
 
@@ -135,9 +135,8 @@ function applyData(data) {
 }
 
 function focusHash() {
-  const match = /^#m=(\d+)/.exec(location.hash);
-  if (!match) return;
-  const id = match[1];
+  const id = parseHash(location.hash);
+  if (!id) return;
   const message = search?.messagesById.get(id);
   if (!message) return;
 

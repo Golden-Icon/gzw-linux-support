@@ -108,3 +108,8 @@ export function renderResult(result, handlers = {}) {
 }
 
 export { ICON_COPY };
+
+export function parseHash(hash) {
+  const match = /^#m=(\d+)$/.exec(String(hash ?? ""));
+  return match ? match[1] : null;
+}

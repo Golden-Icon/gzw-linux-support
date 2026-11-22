@@ -40,3 +40,11 @@ test("formatTimestamp renders a stable, readable UTC date", () => {
   assert.equal(formatTimestamp("2026-10-22T08:26:57.662Z"), "2026-10-22 08:26 UTC");
   assert.equal(formatTimestamp("not a date"), "unknown date");
 });
+
+test("parseHash finds a permalinked message id", async () => {
+  const { parseHash } = await import("../assets/lib/dom.js");
+  assert.equal(parseHash("#m=1573636888751902841"), "1573636888751902841");
+  assert.equal(parseHash("#m=abc"), null);
+  assert.equal(parseHash(""), null);
+  assert.equal(parseHash("#section"), null);
+});
