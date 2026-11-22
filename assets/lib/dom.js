@@ -42,11 +42,35 @@ function el(tag, className, text) {
   return node;
 }
 
+const URL_PATTERN = /https?:\/\/[^\s<>"'`]+/g;
+
+function trimUrl(url) {
+  return url.replace(/[.,;:!?)\]}]+$/, "");
+}
+
+function appendTextWithLinks(parent, text) {
+  let cursor = 0;
+  for (const match of String(text ?? "").matchAll(URL_PATTERN)) {
+    const raw = match[0];
+    const url = trimUrl(raw);
+    const start = match.index ?? 0;
+    if (start > cursor) parent.append(document.createTextNode(text.slice(cursor, start)));
+    const link = el("a", "message-link", url);
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    parent.append(link);
+    if (raw.length > url.length) parent.append(document.createTextNode(raw.slice(url.length)));
+    cursor = start + raw.length;
+  }
+  if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
+}
+
 function snippetNode(snippet) {
   const node = el("p", "snippet");
   for (const part of highlightRanges(snippet.text, snippet.ranges)) {
     if (part.match) node.append(el("mark", "", part.text));
-    else node.append(document.createTextNode(part.text));
+    else appendTextWithLinks(node, part.text);
   }
   return node;
 }
@@ -60,7 +84,8 @@ export function renderContext(messages, currentId) {
     meta.append(el("span", "context-author", message.author));
     meta.append(el("span", "context-time", formatTimestamp(message.ts)));
     row.append(meta);
-    const body = el("p", "context-body", message.content);
+    const body = el("p", "context-body");
+    appendTextWithLinks(body, message.content);
     row.append(body);
     wrap.append(row);
   }
@@ -86,7 +111,27 @@ export function renderResult(result, handlers = {}) {
   card.append(meta);
   card.append(snippetNode(snippet));
 
+  const embedLinks = (message.embeds ?? []).filter((embed) => embed.url);
+  if (embedLinks.length) {
+    const row = el("div", "result-links");
+    for (const embed of embedLinks) {
+      const link = el("a", "embed-link", embed.title || embed.url);
+      link.href = embed.url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      row.append(link);
+    }
+    card.append(row);
+  }
+
   const actions = el("div", "result-actions");
+  if (message.replyTo) {
+    const reply = el("a", "button", "Replied message");
+    reply.href = message.url.replace(/\d+$/, message.replyTo);
+    reply.target = "_blank";
+    reply.rel = "noopener noreferrer";
+    actions.append(reply);
+  }
   const link = el("a", "button", "Open in Discord");
   link.href = message.url;
   link.target = "_blank";

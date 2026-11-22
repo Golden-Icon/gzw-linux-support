@@ -1,5 +1,5 @@
-import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122c";
-import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122c";
+import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122d";
+import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122d";
 
 const $ = (id) => document.getElementById(id);
 

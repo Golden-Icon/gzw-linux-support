@@ -277,6 +277,21 @@ mark {
   padding: 0 0.1em;
 }
 
+.message-link,
+.embed-link {
+  color: var(--accent);
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.result-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0 0 0.7rem;
+  font-size: 0.9rem;
+}
+
 .result-actions {
   display: flex;
   gap: 0.5rem;
