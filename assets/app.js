@@ -1,5 +1,5 @@
-import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122f";
-import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122f";
+import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122g";
+import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122g";
 
 const $ = (id) => document.getElementById(id);
 
@@ -216,7 +216,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-fetch("data/messages.json")
+fetch(`data/messages.json?ts=${Date.now()}`, { cache: "no-store" })
   .then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
