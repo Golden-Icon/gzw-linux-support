@@ -6,8 +6,8 @@
     "forumChannelId": "1561777693001777263",
     "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
   },
-  "scrapedAt": "2026-11-22T21:15:12.461Z",
-  "messageCount": 829,
+  "scrapedAt": "2026-11-22T21:26:10.918Z",
+  "messageCount": 830,
   "messages": [
     {
       "id": "1562744057388728382",
@@ -472,7 +472,7 @@
     {
       "id": "1562984149311164568",
       "ts": "2026-10-23T00:21:00.037Z",
-      "author": "Majestic Monstrosity",
+      "author": "HorrificBeauty",
       "authorKey": "d88da43413c15144",
       "kind": "human",
       "isStarter": false,
@@ -19333,6 +19333,29 @@
       "mentions": [],
       "edited": false,
       "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1573636888751902841"
+    },
+    {
+      "id": "1574173442167677051",
+      "ts": "2026-11-22T21:23:15.341Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "test post for Discord' new public web scraping.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "test post for Discord' new public web scraping."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574173442167677051"
     }
   ]
 }
