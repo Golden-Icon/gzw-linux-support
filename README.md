@@ -18,7 +18,7 @@ No backend, no tracking, no third-party requests.
 
 ## Using it
 
-Open the hosted page (GitHub Pages URL goes here) or run it locally:
+Open **<https://golden-icon.github.io/gzw-linux-support/>** or run it locally:
 
 ```bash
 npm install
