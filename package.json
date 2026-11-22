@@ -1,0 +1,14 @@
+{
+  "name": "gzw-linux-support-search",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/",
+    "serve": "npx --yes serve -l 8080 .",
+    "ingest": "node scripts/ingest.mjs",
+    "verify": "node scripts/verify.mjs"
+  },
+  "devDependencies": {
+    "minisearch": "^7.1.2"
+  }
+}
