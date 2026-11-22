@@ -216,3 +216,12 @@ test("substring matches are not dropped when a token match also exists", () => {
   const { results } = search.run({ q: "land" });
   assert.equal(results.length, 3);
 });
+
+test("a normal long post is shown whole, not cut to a window", () => {
+  const body = `${"context line\n".repeat(60)}python ./gzw_voip_fix-autodetect.py\n${"more detail\n".repeat(30)}`;
+  const search = createSearch([msg({ content: body })]);
+  const { results } = search.run({ q: "voip" });
+  assert.equal(results[0].snippet.text, body);
+  assert.ok(results[0].snippet.text.includes("gzw_voip_fix-autodetect.py"));
+  assert.equal(results[0].snippet.ranges.length, 1);
+});

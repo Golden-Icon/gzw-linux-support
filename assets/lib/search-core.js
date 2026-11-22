@@ -49,6 +49,17 @@ export function makeSnippet(content, query, width = 180) {
   const needles = [...parsed.terms, ...parsed.phrases].filter(Boolean);
   const lower = text.toLowerCase();
 
+  // Thread messages are short enough to show whole. Cutting a 1,000-character
+  // fix down to a 180-character window hides the instructions and links.
+  if (text.length <= 4000) {
+    const ranges = [];
+    for (const needle of needles) {
+      for (const [from, to] of matchSpans(lower, needle)) ranges.push([from, to]);
+    }
+    ranges.sort((a, b) => a[0] - b[0]);
+    return { text, ranges };
+  }
+
   let firstMatch = -1;
   for (const needle of needles) {
     const index = lower.indexOf(needle);

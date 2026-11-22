@@ -60,7 +60,7 @@ export function renderContext(messages, currentId) {
     meta.append(el("span", "context-author", message.author));
     meta.append(el("span", "context-time", formatTimestamp(message.ts)));
     row.append(meta);
-    const body = el("p", "context-body", message.content.length > 600 ? `${message.content.slice(0, 600)}…` : message.content);
+    const body = el("p", "context-body", message.content);
     row.append(body);
     wrap.append(row);
   }
