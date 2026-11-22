@@ -6,8 +6,8 @@
     "forumChannelId": "1561777693001777263",
     "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
   },
-  "scrapedAt": "2026-11-22T21:26:10.918Z",
-  "messageCount": 830,
+  "scrapedAt": "2026-11-22T23:39:10.250Z",
+  "messageCount": 831,
   "messages": [
     {
       "id": "1562744057388728382",
@@ -19356,6 +19356,37 @@
       "mentions": [],
       "edited": false,
       "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574173442167677051"
+    },
+    {
+      "id": "1574203940411678730",
+      "ts": "2026-11-22T23:24:26.689Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Alright nerds.. this project took me a lot longer than I expected it too, but here you go. \n\nAnyone who's tried to use Discord search knows how garbage it is, and then trying to gleam info without context from the small side window where the results come up is even worse.\n\nSo,  I've got a simple catalog of the channels conversations using Discord's new public feed.   You can search to your hearts content, use operators, and even share links to information for people who are not on the Discord.\n\nLinks for discord conversations will still open a discord window for the GZW server, I won't circumvent that.   But now you can find, and link that annoying friend who bitches about something not working, but wouldn't spend the 10 seconds/10 minutes it took to find it on discord.\n\nHopefully some of you find this useful,  I'll update the new posts periodically, and I'll do targeted forced updates when a new issues/solution arises.   And of course, as new patches are released and the channels are updated.\n\nSearched default to relevance.   I'm using MiniSearch's BM25-style scoring system.  When there's a query, the same query terms/phrases are run through MiniSearch over four fields in this order:Message Content, embeded text, attachment names, and author name.  I included author name because I feel it was justified to focus output from the folks who spend more time/effort helping others fix their issues.  If there's a solution, it's more likely you're finding it from  one of the top contributors. \n\n\nhttps://golden-icon.github.io/gzw-linux-support/ (edited)\nSunday, November 22, 2026 at 6:31 PM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Alright nerds.. this project took me a lot longer than I expected it too, but here you go. \n\nAnyone who's tried to use Discord search knows how garbage it is, and then trying to gleam info without context from the small side window where the results come up is even worse.\n\nSo,  I've got a simple catalog of the channels conversations using Discord's new public feed.   You can search to your hearts content, use operators, and even share links to information for people who are not on the Discord.\n\nLinks for discord conversations will still open a discord window for the GZW server, I won't circumvent that.   But now you can find, and link that annoying friend who bitches about something not working, but wouldn't spend the 10 seconds/10 minutes it took to find it on discord.\n\nHopefully some of you find this useful,  I'll update the new posts periodically, and I'll do targeted forced updates when a new issues/solution arises.   And of course, as new patches are released and the channels are updated.\n\nSearched default to relevance.   I'm using MiniSearch's BM25-style scoring system.  When there's a query, the same query terms/phrases are run through MiniSearch over four fields in this order:Message Content, embeded text, attachment names, and author name.  I included author name because I feel it was justified to focus output from the folks who spend more time/effort helping others fix their issues.  If there's a solution, it's more likely you're finding it from  one of the top contributors. \n\nhttps://golden-icon.github.io/gzw-linux-support/ (edited)Sunday, November 22, 2026 at 6:31 PM"
+        }
+      ],
+      "links": [
+        "https://golden-icon.github.io/gzw-linux-support/"
+      ],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "GZW Linux Support Search",
+          "description": "Search every message in the Gray Zone Warfare Community - Linux Support thread.",
+          "url": "https://golden-icon.github.io/gzw-linux-support/"
+        }
+      ],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574203940411678730"
     }
   ]
 }
