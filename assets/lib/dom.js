@@ -66,12 +66,59 @@ function appendTextWithLinks(parent, text) {
   if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
 }
 
+function normalizeRanges(ranges = []) {
+  const normalized = ranges
+    .map(([start, end]) => [Math.max(0, start), Math.max(0, end)])
+    .filter(([start, end]) => start < end)
+    .sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const merged = [];
+  for (const [start, end] of normalized) {
+    const last = merged.at(-1);
+    if (last && start <= last[1]) last[1] = Math.max(last[1], end);
+    else merged.push([start, end]);
+  }
+  return merged;
+}
+
+function appendMarked(parent, text, from, to, ranges) {
+  let cursor = from;
+  for (const [rangeStart, rangeEnd] of ranges) {
+    const start = Math.max(rangeStart, from);
+    const end = Math.min(rangeEnd, to);
+    if (start >= end) continue;
+    if (start > cursor) parent.append(document.createTextNode(text.slice(cursor, start)));
+    parent.append(el("mark", "", text.slice(start, end)));
+    cursor = end;
+  }
+  if (cursor < to) parent.append(document.createTextNode(text.slice(cursor, to)));
+}
+
 function snippetNode(snippet) {
   const node = el("p", "snippet");
-  for (const part of highlightRanges(snippet.text, snippet.ranges)) {
-    if (part.match) node.append(el("mark", "", part.text));
-    else appendTextWithLinks(node, part.text);
+  const text = String(snippet.text ?? "");
+  const ranges = normalizeRanges(snippet.ranges);
+
+  // Treat each URL as one anchor even when the search highlight lands inside
+  // it (e.g. "voip" in GZW-0.5-VOIP-FIX), so the href is the whole URL.
+  const urls = [...text.matchAll(URL_PATTERN)].map((match) => {
+    const raw = match[0];
+    const url = trimUrl(raw);
+    return { start: match.index ?? 0, end: (match.index ?? 0) + url.length, url };
+  });
+
+  let cursor = 0;
+  for (const entry of urls) {
+    if (entry.start < cursor || entry.end <= entry.start) continue;
+    appendMarked(node, text, cursor, entry.start, ranges);
+    const link = el("a", "message-link");
+    link.href = entry.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    appendMarked(link, text, entry.start, entry.end, ranges);
+    node.append(link);
+    cursor = entry.end;
   }
+  appendMarked(node, text, cursor, text.length, ranges);
   return node;
 }
 
