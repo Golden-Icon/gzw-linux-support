@@ -1,5 +1,5 @@
-import { createSearch, getContext, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122b";
-import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122b";
+import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122c";
+import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122c";
 
 const $ = (id) => document.getElementById(id);
 
@@ -23,7 +23,6 @@ const els = {
 
 let snapshot = null;
 let search = null;
-let limit = 50;
 let debounce = null;
 
 function controlsToState() {
@@ -104,7 +103,7 @@ const handlers = { onCopy: copyLink, onContext: toggleContext };
 function render() {
   if (!search) return;
   const state = controlsToState();
-  const { results, total } = search.run({ ...state, limit, offset: 0 });
+  const { results, total } = search.run({ ...state });
 
   els.list.replaceChildren();
   for (const result of results) els.list.append(renderResult(result, handlers));
@@ -120,13 +119,12 @@ function render() {
       shown < total ? `${total} ${label} · showing ${shown}` : `${total} ${label}`;
   }
 
-  els.more.hidden = results.length >= total;
+  els.more.hidden = true;
 }
 
 function applyData(data) {
   snapshot = data;
   search = createSearch(data.messages);
-  limit = 50;
   els.snapshot.textContent = messageSummary(data);
   fillAuthors();
   stateToControls(parseUrlState(location.search));
@@ -143,7 +141,7 @@ function focusHash() {
   let card = [...els.list.querySelectorAll(".result")].find((node) => node.dataset.messageId === id);
   if (!card) {
     card = renderResult(
-      { message, snippet: { text: message.content.slice(0, 400), ranges: [] } },
+      { message, snippet: makeSnippet(message.content, "") },
       handlers,
     );
     card.classList.add("result-linked");
@@ -180,8 +178,7 @@ async function refresh() {
 function scheduleRender() {
   clearTimeout(debounce);
   debounce = setTimeout(() => {
-    limit = 50;
-    syncUrl();
+      syncUrl();
     render();
   }, 80);
 }
@@ -196,7 +193,6 @@ els.form.addEventListener("submit", (event) => {
 els.clear.addEventListener("click", () => {
   els.form.reset();
   els.sort.value = "relevance";
-  limit = 50;
   syncUrl();
   render();
   els.q.focus();
@@ -204,10 +200,7 @@ els.clear.addEventListener("click", () => {
 
 els.refresh.addEventListener("click", refresh);
 
-els.more.addEventListener("click", () => {
-  limit += 50;
-  render();
-});
+els.more.addEventListener("click", render);
 
 window.addEventListener("hashchange", focusHash);
 

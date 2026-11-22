@@ -126,14 +126,14 @@ test("author, date, has and sort filters apply", () => {
   );
 });
 
-test("makeSnippet bounds a 20,000 character unbroken log and keeps ranges inside it", () => {
+test("makeSnippet keeps a 20,000 character unbroken log whole and keeps ranges inside it", () => {
   const search = createSearch([
     msg({ content: `start ${"a".repeat(20000)} needle ${"z".repeat(500)} end` }),
     msg({ content: "plain" }),
   ]);
   const { results } = search.run({ q: "needle" });
   const snippet = results[0].snippet;
-  assert.ok(snippet.text.length <= 220, `snippet was ${snippet.text.length} chars`);
+  assert.ok(snippet.text.length > 20000, `snippet was ${snippet.text.length} chars`);
   assert.match(snippet.text, /needle/);
   for (const [start, end] of snippet.ranges) {
     assert.ok(start >= 0 && end <= snippet.text.length && start < end);

@@ -1,7 +1,6 @@
 import MiniSearch from "../../vendor/minisearch.js";
 
-const ELLIPSIS = "…";
-const DEFAULT_LIMIT = 50;
+const DEFAULT_LIMIT = Infinity;
 
 export function parseQuery(input = "") {
   const terms = [];
@@ -43,48 +42,17 @@ function matchSpans(haystack, needle) {
   return spans;
 }
 
-export function makeSnippet(content, query, width = 180) {
+export function makeSnippet(content, query) {
   const text = String(content ?? "");
   const parsed = typeof query === "string" ? parseQuery(query) : query;
   const needles = [...parsed.terms, ...parsed.phrases].filter(Boolean);
   const lower = text.toLowerCase();
-
-  // Thread messages are short enough to show whole. Cutting a 1,000-character
-  // fix down to a 180-character window hides the instructions and links.
-  if (text.length <= 4000) {
-    const ranges = [];
-    for (const needle of needles) {
-      for (const [from, to] of matchSpans(lower, needle)) ranges.push([from, to]);
-    }
-    ranges.sort((a, b) => a[0] - b[0]);
-    return { text, ranges };
-  }
-
-  let firstMatch = -1;
-  for (const needle of needles) {
-    const index = lower.indexOf(needle);
-    if (index !== -1 && (firstMatch === -1 || index < firstMatch)) firstMatch = index;
-  }
-
-  let start = 0;
-  if (firstMatch > width / 3) start = Math.max(0, firstMatch - Math.floor(width / 3));
-  let end = Math.min(text.length, start + width);
-  if (end - start < width) start = Math.max(0, end - width);
-  if (end - start > width) end = start + width;
-
-  const prefix = start > 0 ? ELLIPSIS : "";
-  const suffix = end < text.length ? ELLIPSIS : "";
-  const slice = text.slice(start, end);
   const ranges = [];
-  const sliceLower = slice.toLowerCase();
   for (const needle of needles) {
-    for (const [from, to] of matchSpans(sliceLower, needle)) {
-      ranges.push([from + prefix.length, to + prefix.length]);
-    }
+    for (const [from, to] of matchSpans(lower, needle)) ranges.push([from, to]);
   }
   ranges.sort((a, b) => a[0] - b[0]);
-
-  return { text: `${prefix}${slice}${suffix}`, ranges };
+  return { text, ranges };
 }
 
 function allText(message) {
