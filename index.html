@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>GZW Linux Support Search</title>
+    <meta
+      name="description"
+      content="Search every message in the Gray Zone Warfare Community - Linux Support thread."
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#search-input">Skip to search</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <h1>GZW Linux Support Search</h1>
+          <p class="subtitle">
+            Every message in
+            <a
+              href="https://discord.com/channels/1166365362158313522/1562744057388728382"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Community - Linux Support</a
+            >
+            on the Gray Zone Warfare Discord.
+          </p>
+        </div>
+        <div class="header-actions">
+          <a class="button" href="https://discord.com/channels/1166365362158313522/1561777693001777263" target="_blank" rel="noopener noreferrer">Parent forum</a>
+          <button class="button" id="refresh" type="button">Refresh data</button>
+        </div>
+      </div>
+      <p class="snapshot-line">
+        <span id="snapshot-info">Loading snapshot…</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span id="refreshed" role="status" aria-live="polite"></span>
+      </p>
+    </header>
+
+    <main>
+      <form class="search-panel" id="search-form" role="search">
+        <label class="field field-grow">
+          <span class="field-label">Search the thread</span>
+          <input
+            id="search-input"
+            name="q"
+            type="search"
+            autocomplete="off"
+            spellcheck="false"
+            placeholder='proton, "black screen", -wayland'
+          />
+        </label>
+
+        <div class="filters">
+          <label class="field">
+            <span class="field-label">Author</span>
+            <select id="author"><option value="">Anyone</option></select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">From</span>
+            <input id="from" type="date" />
+          </label>
+
+          <label class="field">
+            <span class="field-label">To</span>
+            <input id="to" type="date" />
+          </label>
+
+          <label class="field">
+            <span class="field-label">Sort</span>
+            <select id="sort">
+              <option value="relevance">Relevance</option>
+              <option value="newest">Newest first</option>
+              <option value="oldest">Oldest first</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span class="field-label">Contains</span>
+            <select id="has">
+              <option value="">Anything</option>
+              <option value="code">Code block</option>
+              <option value="attachment">Attachment</option>
+            </select>
+          </label>
+
+          <button class="button button-ghost" id="clear" type="button">Clear</button>
+        </div>
+
+        <p class="hint">
+          Plain words are ANDed. <code>"exact phrase"</code> matches adjacency, <code>-word</code> excludes.
+          Press <kbd>/</kbd> to focus, <kbd>Esc</kbd> to clear.
+        </p>
+      </form>
+
+      <section class="results" aria-labelledby="results-heading">
+        <h2 id="results-heading" class="visually-hidden">Results</h2>
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+        <div id="results-list"></div>
+        <button class="button load-more" id="load-more" type="button" hidden>Load more</button>
+      </section>
+
+      <p class="error" id="error" hidden></p>
+    </main>
+
+    <footer>
+      <p>
+        Snapshot of a public Discord thread. Display names only; no avatars, roles or attachment links are stored.
+        Not affiliated with Discord or MADFINGER Games.
+      </p>
+      <p><a href="https://github.com/">Source on GitHub</a></p>
+    </footer>
+
+    <script type="module" src="assets/app.js"></script>
+  </body>
+</html>
