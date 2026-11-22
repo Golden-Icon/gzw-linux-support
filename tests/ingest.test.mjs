@@ -208,3 +208,21 @@ test("the recorded scrape fixture ingests into a verifiable snapshot", async () 
   assert.deepEqual(snapshot.messages[3].attachments, [{ name: "proton-log.txt", type: "file" }]);
   assert.equal(snapshot.messages[4].edited, true);
 });
+
+test("channel mentions keep their label and target, including identical labels", () => {
+  const link = "https://discord.com/channels/1166365362158313522/1562744057388728382/";
+  const message = normalizeMessage(
+    raw({
+      mentions: [
+        { text: "Community - Linux Support", url: `${link}1566857432401973369` },
+        { text: "Community - Linux Support", url: `${link}1566861381507096787` },
+        { text: "drop me" },
+      ],
+    }),
+    THREAD,
+  );
+  assert.deepEqual(message.mentions, [
+    { text: "Community - Linux Support", url: `${link}1566857432401973369` },
+    { text: "Community - Linux Support", url: `${link}1566861381507096787` },
+  ]);
+});

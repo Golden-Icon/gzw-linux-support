@@ -38,6 +38,9 @@ export function normalizeMessage(raw, thread) {
       type: a.type,
     })),
     embeds: (Array.isArray(raw.embeds) ? raw.embeds : []).map(cleanEmbed).filter((e) => Object.keys(e).length),
+    mentions: (Array.isArray(raw.mentions) ? raw.mentions : [])
+      .filter((m) => typeof m?.text === "string" && typeof m?.url === "string")
+      .map((m) => ({ text: m.text, url: m.url })),
     edited: Boolean(raw.edited),
     url: discordUrl(thread, id),
   };
@@ -85,6 +88,7 @@ function fingerprint(message) {
     replyTo: message.replyTo,
     attachments: message.attachments,
     embeds: message.embeds,
+    mentions: message.mentions,
     edited: message.edited,
     author: message.author,
     authorKey: message.authorKey,

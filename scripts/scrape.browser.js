@@ -144,6 +144,32 @@
     return out;
   }
 
+  function mentionsOf(contentEl) {
+    const out = [];
+    const seen = new Set();
+    if (!contentEl) return out;
+    for (const node of contentEl.querySelectorAll(".channelMention")) {
+      const text = node.textContent;
+      const key = Object.getOwnPropertyNames(node).find((name) => name.startsWith("__reactFiber"));
+      let fiber = key ? node[key] : null;
+      let data = null;
+      while (fiber && !data) {
+        const props = fiber.memoizedProps;
+        if (props?.node?.type === "channelMention") data = props.node;
+        fiber = fiber.return;
+      }
+      if (!data?.messageId) continue;
+      const url =
+        data.originalLink ||
+        `https://discord.com/channels/${data.guildId}/${data.channelId}/${data.messageId}`;
+      const dedupe = `${text}|${url}`;
+      if (seen.has(dedupe)) continue;
+      seen.add(dedupe);
+      out.push({ text, url });
+    }
+    return out;
+  }
+
   function extract(li, state) {
     const id = messageIdOf(li);
     if (!id) return null;
@@ -201,6 +227,7 @@
       replyTo: replyContent ? (/\d+$/.exec(replyContent.id) || [])[0] || null : null,
       attachments: attachmentsOf(li),
       embeds: embedsOf(li),
+      mentions: mentionsOf(contentEl),
       edited,
     };
   }
@@ -214,6 +241,7 @@
     if (!merged.segments?.length && record.segments?.length) merged.segments = record.segments;
     if (!merged.attachments?.length && record.attachments?.length) merged.attachments = record.attachments;
     if (!merged.embeds?.length && record.embeds?.length) merged.embeds = record.embeds;
+    if (!merged.mentions?.length && record.mentions?.length) merged.mentions = record.mentions;
     if (merged.author === "unknown" && record.author) merged.author = record.author;
     merged.isOp = merged.isOp || record.isOp;
     merged.isStarter = merged.isStarter || record.isStarter;

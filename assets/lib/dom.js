@@ -48,24 +48,6 @@ function trimUrl(url) {
   return url.replace(/[.,;:!?)\]}]+$/, "");
 }
 
-function appendTextWithLinks(parent, text) {
-  let cursor = 0;
-  for (const match of String(text ?? "").matchAll(URL_PATTERN)) {
-    const raw = match[0];
-    const url = trimUrl(raw);
-    const start = match.index ?? 0;
-    if (start > cursor) parent.append(document.createTextNode(text.slice(cursor, start)));
-    const link = el("a", "message-link", url);
-    link.href = url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    parent.append(link);
-    if (raw.length > url.length) parent.append(document.createTextNode(raw.slice(url.length)));
-    cursor = start + raw.length;
-  }
-  if (cursor < text.length) parent.append(document.createTextNode(text.slice(cursor)));
-}
-
 function normalizeRanges(ranges = []) {
   const normalized = ranges
     .map(([start, end]) => [Math.max(0, start), Math.max(0, end)])
@@ -93,32 +75,61 @@ function appendMarked(parent, text, from, to, ranges) {
   if (cursor < to) parent.append(document.createTextNode(text.slice(cursor, to)));
 }
 
-function snippetNode(snippet) {
+function linkSpans(text, message) {
+  const spans = [];
+  for (const match of text.matchAll(URL_PATTERN)) {
+    const url = trimUrl(match[0]);
+    spans.push({ start: match.index ?? 0, end: (match.index ?? 0) + url.length, url });
+  }
+  // Discord channel/thread mentions are spans, not anchors. They are stored in
+  // message order, so find each label at or after the previous one; identical
+  // labels can still point at different messages.
+  let cursor = 0;
+  for (const mention of message?.mentions ?? []) {
+    let at = text.indexOf(mention.text, cursor);
+    if (at === -1) at = text.indexOf(mention.text);
+    if (at === -1) continue;
+    spans.push({ start: at, end: at + mention.text.length, url: mention.url });
+    cursor = at + mention.text.length;
+  }
+  spans.sort((a, b) => a.start - b.start);
+  const out = [];
+  let last = 0;
+  for (const span of spans) {
+    if (span.start >= last && span.end > span.start) {
+      out.push(span);
+      last = span.end;
+    }
+  }
+  return out;
+}
+
+function renderLinked(node, text, spans, ranges) {
+  let cursor = 0;
+  for (const span of spans) {
+    appendMarked(node, text, cursor, span.start, ranges);
+    const link = el("a", "message-link");
+    link.href = span.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    appendMarked(link, text, span.start, span.end, ranges);
+    node.append(link);
+    cursor = span.end;
+  }
+  appendMarked(node, text, cursor, text.length, ranges);
+}
+
+function snippetNode(snippet, message) {
   const node = el("p", "snippet");
   const text = String(snippet.text ?? "");
   const ranges = normalizeRanges(snippet.ranges);
+  renderLinked(node, text, linkSpans(text, message), ranges);
+  return node;
+}
 
-  // Treat each URL as one anchor even when the search highlight lands inside
-  // it (e.g. "voip" in GZW-0.5-VOIP-FIX), so the href is the whole URL.
-  const urls = [...text.matchAll(URL_PATTERN)].map((match) => {
-    const raw = match[0];
-    const url = trimUrl(raw);
-    return { start: match.index ?? 0, end: (match.index ?? 0) + url.length, url };
-  });
-
-  let cursor = 0;
-  for (const entry of urls) {
-    if (entry.start < cursor || entry.end <= entry.start) continue;
-    appendMarked(node, text, cursor, entry.start, ranges);
-    const link = el("a", "message-link");
-    link.href = entry.url;
-    link.target = "_blank";
-    link.rel = "noopener noreferrer";
-    appendMarked(link, text, entry.start, entry.end, ranges);
-    node.append(link);
-    cursor = entry.end;
-  }
-  appendMarked(node, text, cursor, text.length, ranges);
+function contextBody(message) {
+  const node = el("p", "context-body");
+  renderLinked(node, message.content, linkSpans(message.content, message), []);
   return node;
 }
 
@@ -131,9 +142,7 @@ export function renderContext(messages, currentId) {
     meta.append(el("span", "context-author", message.author));
     meta.append(el("span", "context-time", formatTimestamp(message.ts)));
     row.append(meta);
-    const body = el("p", "context-body");
-    appendTextWithLinks(body, message.content);
-    row.append(body);
+    row.append(contextBody(message));
     wrap.append(row);
   }
   return wrap;
@@ -156,7 +165,7 @@ export function renderResult(result, handlers = {}) {
   if (badges.childNodes.length) meta.append(badges);
 
   card.append(meta);
-  card.append(snippetNode(snippet));
+  card.append(snippetNode(snippet, message));
 
   const embedLinks = (message.embeds ?? []).filter((embed) => embed.url);
   if (embedLinks.length) {
