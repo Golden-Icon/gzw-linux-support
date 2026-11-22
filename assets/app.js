@@ -1,5 +1,5 @@
-import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122h";
-import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122h";
+import { createSearch, getContext, makeSnippet, parseUrlState, toUrlState } from "./lib/search-core.js?v=20261122g";
+import { formatTimestamp, parseHash, renderContext, renderResult } from "./lib/dom.js?v=20261122g";
 
 const $ = (id) => document.getElementById(id);
 
@@ -12,6 +12,8 @@ const els = {
   sort: $("sort"),
   has: $("has"),
   clear: $("clear"),
+  refresh: $("refresh"),
+  refreshed: $("refreshed"),
   snapshot: $("snapshot-info"),
   count: $("result-count"),
   list: $("results-list"),
@@ -150,6 +152,28 @@ function focusHash() {
   setTimeout(() => card.classList.remove("result-linked"), 2000);
 }
 
+async function refresh() {
+  els.refresh.disabled = true;
+  els.refreshed.textContent = "Checking for a newer snapshot…";
+  try {
+    const response = await fetch(`data/messages.json?ts=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    if (!Array.isArray(data?.messages) || data.messages.length === 0) {
+      throw new Error("snapshot has no messages");
+    }
+    if (snapshot && data.scrapedAt === snapshot.scrapedAt) {
+      els.refreshed.textContent = "Already up to date.";
+      return;
+    }
+    applyData(data);
+    els.refreshed.textContent = `Updated to ${formatTimestamp(data.scrapedAt)}.`;
+  } catch (error) {
+    els.refreshed.textContent = `Refresh failed: ${error.message}`;
+  } finally {
+    els.refresh.disabled = false;
+  }
+}
 
 function scheduleRender() {
   clearTimeout(debounce);
@@ -173,6 +197,8 @@ els.clear.addEventListener("click", () => {
   render();
   els.q.focus();
 });
+
+els.refresh.addEventListener("click", refresh);
 
 els.more.addEventListener("click", render);
 
