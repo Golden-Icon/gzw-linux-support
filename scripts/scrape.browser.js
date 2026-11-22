@@ -40,15 +40,17 @@
   }
 
   function authorOf(li) {
-    const el = li.querySelector('[id^="message-username-"]');
-    if (!el) return null;
-    const name = (el.getAttribute("data-text") || el.textContent || "").trim();
+    // The username element's textContent also contains role icons, server tags
+    // and the OP tag; the inner data-text span holds the display name only.
+    const el = li.querySelector('[id^="message-username-"] [data-text]');
+    const name = (el?.getAttribute("data-text") || "").trim();
     return name || null;
   }
 
   function authorIdOf(li) {
-    const own = li.querySelector('img[src*="/avatars/"]');
-    const img = own || li.querySelector('[class*="avatar"] img[src*="/avatars/"]');
+    // Skip the small avatar inside a reply context: it belongs to the author
+    // being replied to, not to this message.
+    const img = li.querySelector('img[src*="/avatars/"]:not([class*="replyAvatar"])');
     const src = img?.getAttribute("src") || "";
     const match = /\/avatars\/(\d+)\//.exec(src);
     return match ? match[1] : null;
@@ -160,9 +162,7 @@
 
     const edited = /\(edited\)/i.test(li.innerText || "");
     const opTag = Boolean(li.querySelector('[class*="opTag"], [aria-label*="Original Poster"]'));
-    const replyLink = li.querySelector(
-      '[id^="message-replied-to-"] a[href*="/channels/"], [class*="repliedMessage"] a[href*="/channels/"]',
-    );
+    const replyContent = li.querySelector('[id^="message-reply-context-"] [id^="message-content-"]');
 
     return {
       id,
@@ -177,7 +177,7 @@
       links: contentEl
         ? [...contentEl.querySelectorAll("a[href^='http']")].map((a) => a.getAttribute("href"))
         : [],
-      replyTo: replyLink ? (/\/channels\/\d+\/\d+\/(\d+)/.exec(replyLink.getAttribute("href")) || [])[1] ?? null : null,
+      replyTo: replyContent ? (/\d+$/.exec(replyContent.id) || [])[0] || null : null,
       attachments: attachmentsOf(li),
       embeds: embedsOf(li),
       edited,
@@ -243,7 +243,6 @@
     let quiet = 0;
     for (let round = 0; round < maxRounds; round += 1) {
       const before = byId.size;
-      const previousTop = scroller.scrollTop;
       scroller.scrollTop = Math.max(0, scroller.scrollTop - Math.max(420, scroller.clientHeight * stepRatio));
       await sleep(settle);
       collect();
@@ -259,8 +258,7 @@
         console.log(`[gzw-scrape] round ${round}: ${byId.size} messages, top=${scroller.scrollTop}`);
       }
 
-      if (byId.has(THREAD.id) && added === 0 && scroller.scrollTop === 0 && previousTop === 0) quiet += 1;
-      else if (added === 0) quiet += 1;
+      if (added === 0) quiet += 1;
       else quiet = 0;
       if (byId.has(THREAD.id) && quiet >= 3) break;
     }
