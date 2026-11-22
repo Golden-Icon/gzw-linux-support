@@ -191,7 +191,8 @@ export function createSearch(messages) {
     if (sort === "newest") results.sort((a, b) => compareTs(b, a));
     else if (sort === "oldest") results.sort(compareTs);
     else if (hasQuery) results.sort((a, b) => b.score - a.score || compareTs(b, a));
-    else results.sort((a, b) => compareTs(b, a));
+    // Browsing without a query reads like the thread: oldest at the top.
+    else results.sort(compareTs);
 
     const total = results.length;
     const offset = Math.max(0, filters.offset ?? 0);

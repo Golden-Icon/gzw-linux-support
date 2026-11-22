@@ -50,16 +50,24 @@
   function authorIdOf(li) {
     // Skip the small avatar inside a reply context: it belongs to the author
     // being replied to, not to this message.
-    const img = li.querySelector('img[src*="/avatars/"]:not([class*="replyAvatar"])');
+    const img = [...li.querySelectorAll('img[src*="/avatars/"]')].find(
+      (node) => !node.closest('[id^="message-reply-context-"]'),
+    );
     const src = img?.getAttribute("src") || "";
     const match = /\/avatars\/(\d+)\//.exec(src);
     return match ? match[1] : null;
   }
 
-  function timestampOf(li) {
-    const time = li.querySelector("time[datetime]");
+  function timestampOf(li, id) {
+    // Reply previews can carry a timestamp for the message being replied to;
+    // prefer the element whose id names this message.
+    const own = li.querySelector(`#message-timestamp-${id}`);
+    if (own?.getAttribute("datetime")) return own.getAttribute("datetime");
+    const time = [...li.querySelectorAll("time[datetime]")].find(
+      (node) => !node.closest('[id^="message-reply-context-"]'),
+    );
     if (time?.getAttribute("datetime")) return time.getAttribute("datetime");
-    const el = li.querySelector('[id^="message-timestamp-"]');
+    const el = li.querySelector('[id^="message-timestamp-"]:not([id^="message-reply-context-"])');
     const stamp = el?.getAttribute("datetime") || el?.getAttribute("title");
     return stamp ? new Date(stamp).toISOString() : null;
   }
@@ -144,7 +152,12 @@
       return null;
     }
 
-    const contentEl = li.querySelector('[id^="message-content-"]');
+    // A reply carries a quoted `message-content-<parent>` inside
+    // message-reply-context before the real body; take the first content node
+    // that is not part of that preview.
+    const contentEl = [...li.querySelectorAll('[id^="message-content-"]')].find(
+      (node) => !node.closest('[id^="message-reply-context-"]'),
+    );
     const segments = contentEl ? segmentsOf(contentEl) : [];
     let content = contentEl ? contentEl.innerText.trim() : "";
     if (!content) {
@@ -160,13 +173,21 @@
     const headerAuthorId = authorIdOf(li);
     if (headerAuthorId) state.lastAuthorId = headerAuthorId;
 
-    const edited = /\(edited\)/i.test(li.innerText || "");
+    const ownHtml = li.cloneNode(true);
+    for (const preview of ownHtml.querySelectorAll('[id^="message-reply-context-"]')) preview.remove();
+    const edited = /\(edited\)/i.test(ownHtml.innerText || "");
     const opTag = Boolean(li.querySelector('[class*="opTag"], [aria-label*="Original Poster"]'));
     const replyContent = li.querySelector('[id^="message-reply-context-"] [id^="message-content-"]');
 
+    const ts = timestampOf(li, id);
+    if (!ts) {
+      state.dropped += 1;
+      return null;
+    }
+
     return {
       id,
-      ts: timestampOf(li),
+      ts,
       author: headerAuthor ?? state.lastAuthor ?? null,
       authorId: headerAuthorId ?? state.lastAuthorId ?? null,
       kind: "human",
@@ -209,13 +230,17 @@
     if (!scroller) throw new Error("scrollable message pane not found");
 
     const byId = new Map();
-    const state = { skippedSystem: 0, lastAuthor: null, lastAuthorId: null };
+    const state = { skippedSystem: 0, dropped: 0, lastAuthor: null, lastAuthorId: null };
 
     const collect = () => {
       const nodes = [...list.querySelectorAll('li[id^="chat-messages-"]')];
       let added = 0;
+      // Author inheritance is per observation pass: a grouped message may
+      // legitimately take the header above it in this viewport, but never the
+      // author of an unrelated message from the previous scroll round.
+      const pass = { lastAuthor: null, lastAuthorId: null };
       for (const li of nodes) {
-        const record = extract(li, state);
+        const record = extract(li, pass);
         if (!record) continue;
         const existing = byId.get(record.id);
         const merged = mergeRecord(existing, record);
@@ -276,6 +301,7 @@
       thread: THREAD,
       scrapedAt: new Date().toISOString(),
       skippedSystem: state.skippedSystem,
+      skippedNoTimestamp: state.dropped,
       messages,
     };
 

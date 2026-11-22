@@ -183,3 +183,11 @@ test("URL state round-trips", () => {
     has: "",
   });
 });
+
+test("an empty query lists the thread oldest first, not newest first", () => {
+  const search = createSearch(MESSAGES);
+  const { results } = search.run({});
+  const stamps = results.map((r) => r.message.ts);
+  assert.deepEqual(stamps, [...stamps].sort());
+  assert.equal(stamps[0], "2026-10-22T08:00:00.000Z");
+});
