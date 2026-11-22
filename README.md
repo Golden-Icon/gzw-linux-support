@@ -18,12 +18,7 @@ No backend, no tracking, no third-party requests.
 
 ## Using it
 
-Open **<https://golden-icon.github.io/gzw-linux-support/>** or run it locally:
-
-```bash
-npm install
-npm run serve      # http://localhost:8080
-```
+Open **<https://golden-icon.github.io/gzw-linux-support/>**.
 
 Keyboard: `/` focuses the search box, `Esc` clears it, `Enter` opens the first result.
 
