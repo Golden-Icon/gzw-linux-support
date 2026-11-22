@@ -7,7 +7,10 @@ export function parseQuery(input = "") {
   const terms = [];
   const phrases = [];
   const excludes = [];
-  const raw = String(input ?? "").trim();
+  let raw = String(input ?? "").trim();
+  // An opening quote that is never closed is a phrase being typed, not a
+  // literal quote character: finish it instead of returning nothing.
+  if ((raw.match(/"/g) ?? []).length % 2 === 1) raw += '"';
   const pattern = /-"([^"]*)"|"([^"]*)"|(\S+)/g;
   let match;
   while ((match = pattern.exec(raw)) !== null) {
@@ -73,13 +76,6 @@ export function makeSnippet(content, query, width = 180) {
   return { text: `${prefix}${slice}${suffix}`, ranges };
 }
 
-function codeText(message) {
-  return (message.segments ?? [])
-    .filter((s) => s.type === "code")
-    .map((s) => s.text)
-    .join("\n");
-}
-
 function allText(message) {
   return (message.segments ?? []).map((s) => s.text).join("\n");
 }
@@ -101,6 +97,18 @@ function searchableText(message) {
     .toLowerCase();
 }
 
+function snippetText(message) {
+  // `content` already carries the segment text; appending the segments repeats
+  // the whole body in every snippet. Add only what content does not include.
+  const body = message.content || allText(message);
+  const segmentText = (message.segments ?? [])
+    .map((s) => s.text)
+    .filter((text) => text && !body.includes(text))
+    .join("\n");
+  const extras = [segmentText, embedText(message), attachmentNames(message)].filter(Boolean);
+  return [body, ...extras].filter(Boolean).join("\n");
+}
+
 function compareTs(a, b) {
   return Date.parse(a.message.ts) - Date.parse(b.message.ts);
 }
@@ -112,14 +120,13 @@ export function createSearch(messages) {
 
   const mini = new MiniSearch({
     idField: "id",
-    fields: ["content", "codeText", "embedText", "attachmentNames", "author"],
+    fields: ["content", "embedText", "attachmentNames", "author"],
     storeFields: ["id"],
   });
   mini.addAll(
     list.map((m) => ({
       id: m.id,
       content: m.content,
-      codeText: codeText(m),
       embedText: embedText(m),
       attachmentNames: attachmentNames(m),
       author: m.author,
@@ -151,28 +158,29 @@ export function createSearch(messages) {
     const parsed = parseQuery(filters.q ?? "");
     const hasQuery = parsed.terms.length > 0 || parsed.phrases.length > 0;
 
-    let scored;
+    // MiniSearch supplies relevance scores, but it tokenizes on word boundaries
+    // and can drop substring hits. Iterate every message for correctness and
+    // use the scores only as a ranking hint.
+    const scores = new Map();
     if (hasQuery) {
       const query = [...parsed.terms, ...parsed.phrases].join(" ");
       try {
-        scored = mini.search(query, { prefix: true, fuzzy: 0.2, combineWith: "AND" });
+        for (const hit of mini.search(query, {
+          prefix: true,
+          fuzzy: 0.2,
+          combineWith: "AND",
+          boost: { content: 3, embedText: 2, attachmentNames: 1, author: 1 },
+        })) {
+          scores.set(hit.id, hit.score);
+        }
       } catch {
-        scored = [];
+        // An unparseable query still gets the substring pass below.
       }
-      if (scored.length === 0) {
-        scored = list.map((m) => ({ id: m.id, score: 0 }));
-      }
-    } else {
-      scored = list.map((m) => ({ id: m.id, score: 0 }));
     }
 
-    const seen = new Set();
     let results = [];
-    for (const hit of scored) {
-      const message = messagesById.get(hit.id);
-      if (!message || seen.has(message.id)) continue;
-      seen.add(message.id);
-      if (!matchesQuery(message, parsed)) continue;
+    for (const message of list) {
+      if (hasQuery && !matchesQuery(message, parsed)) continue;
       if (filters.authorKey && message.authorKey !== filters.authorKey) continue;
       if (filters.has === "code" && !(message.segments ?? []).some((s) => s.type === "code")) continue;
       if (filters.has === "attachment" && !(message.attachments ?? []).length) continue;
@@ -180,9 +188,9 @@ export function createSearch(messages) {
 
       results.push({
         message,
-        score: hit.score ?? 0,
+        score: scores.get(message.id) ?? 0,
         snippet: hasQuery
-          ? makeSnippet([message.content, allText(message)].filter(Boolean).join("\n"), parsed)
+          ? makeSnippet(snippetText(message), parsed)
           : makeSnippet(message.content, parsed),
       });
     }

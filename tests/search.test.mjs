@@ -191,3 +191,28 @@ test("an empty query lists the thread oldest first, not newest first", () => {
   assert.deepEqual(stamps, [...stamps].sort());
   assert.equal(stamps[0], "2026-10-22T08:00:00.000Z");
 });
+
+test("an unmatched opening quote is treated as a phrase being typed", () => {
+  const parsed = parseQuery('"black screen');
+  assert.deepEqual(parsed.phrases, ["black screen"]);
+  const search = createSearch(MESSAGES);
+  const { results } = search.run({ q: '"black screen' });
+  assert.ok(results.some((r) => r.message.content.includes("Black screen")));
+});
+
+test("a snippet does not repeat the message body", () => {
+  const search = createSearch(MESSAGES);
+  const { results } = search.run({ q: "--force" });
+  const snippet = results[0].snippet.text.toLowerCase();
+  assert.equal(snippet.split("--force").length - 1, 1);
+});
+
+test("substring matches are not dropped when a token match also exists", () => {
+  const search = createSearch([
+    msg({ content: "landing gear down", ts: "2026-10-22T08:00:00.000Z" }),
+    msg({ content: "Wayland works now", ts: "2026-10-23T08:00:00.000Z" }),
+    msg({ content: "an island of calm", ts: "2026-10-24T08:00:00.000Z" }),
+  ]);
+  const { results } = search.run({ q: "land" });
+  assert.equal(results.length, 3);
+});
