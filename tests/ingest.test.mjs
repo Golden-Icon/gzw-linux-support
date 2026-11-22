@@ -192,3 +192,19 @@ test("mergeSnapshot refuses a scrape missing the previous newest message", () =>
     /newest|complete/i,
   );
 });
+
+test("the recorded scrape fixture ingests into a verifiable snapshot", async () => {
+  const { readFile } = await import("node:fs/promises");
+  const fixture = JSON.parse(
+    await readFile(new URL("./fixtures/raw-scrape.sample.json", import.meta.url), "utf8"),
+  );
+  const { snapshot, diff } = mergeSnapshot(null, fixture);
+
+  assert.equal(snapshot.messageCount, 5);
+  assert.equal(diff.added, 5);
+  assert.equal(snapshot.messages[0].isStarter, true);
+  assert.equal(snapshot.messages[1].replyTo, fixture.thread.id);
+  assert.equal(snapshot.messages[2].segments[1].lang, "bash");
+  assert.deepEqual(snapshot.messages[3].attachments, [{ name: "proton-log.txt", type: "file" }]);
+  assert.equal(snapshot.messages[4].edited, true);
+});

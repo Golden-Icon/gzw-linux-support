@@ -1,0 +1,96 @@
+{
+  "thread": {
+    "id": "1562744057388728382",
+    "title": "Community - Linux Support",
+    "server": "Gray Zone Warfare",
+    "forumChannelId": "1561777693001777263",
+    "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
+  },
+  "scrapedAt": "2026-11-22T00:00:00.000Z",
+  "skippedSystem": 1,
+  "messages": [
+    {
+      "id": "1562744057388728382",
+      "ts": "2026-10-22T08:26:57.662Z",
+      "author": "Virtual Yoda",
+      "authorId": "405370809725747200",
+      "kind": "human",
+      "isStarter": true,
+      "isOp": true,
+      "content": "Hey guys,\n\nWhile Linux is not officially supported, this thread is for everyone on Linux.",
+      "segments": [{ "type": "text", "text": "Hey guys, While Linux is not officially supported, this thread is for everyone on Linux." }],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "edited": false
+    },
+    {
+      "id": "1562744057388728400",
+      "ts": "2026-10-22T09:00:00.000Z",
+      "author": "tux",
+      "authorId": "405370809725747201",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Same here on Fedora.",
+      "segments": [{ "type": "text", "text": "Same here on Fedora." }],
+      "links": [],
+      "replyTo": "1562744057388728382",
+      "attachments": [],
+      "embeds": [],
+      "edited": false
+    },
+    {
+      "id": "1562744057388728401",
+      "ts": "2026-10-22T10:00:00.000Z",
+      "author": "tux",
+      "authorId": "405370809725747201",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Try this:",
+      "segments": [
+        { "type": "text", "text": "Try this:" },
+        { "type": "code", "lang": "bash", "text": "PROTON_LOG=1 %command%" }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "edited": false
+    },
+    {
+      "id": "1562744057388728402",
+      "ts": "2026-10-22T11:00:00.000Z",
+      "author": "penguin",
+      "authorId": "405370809725747202",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "",
+      "segments": [],
+      "links": [],
+      "replyTo": null,
+      "attachments": [{ "name": "proton-log.txt", "type": "file" }],
+      "embeds": [],
+      "edited": false
+    },
+    {
+      "id": "1562744057388728403",
+      "ts": "2026-10-22T12:00:00.000Z",
+      "author": "penguin",
+      "authorId": "405370809725747202",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Fixed it with a different Wine version.",
+      "segments": [{ "type": "text", "text": "Fixed it with a different Wine version." }],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "edited": true
+    }
+  ]
+}
