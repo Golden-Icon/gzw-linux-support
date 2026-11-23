@@ -6,8 +6,8 @@
     "forumChannelId": "1561777693001777263",
     "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
   },
-  "scrapedAt": "2026-11-23T12:19:57.447Z",
-  "messageCount": 836,
+  "scrapedAt": "2026-11-23T17:44:55.340Z",
+  "messageCount": 837,
   "messages": [
     {
       "id": "1562744057388728382",
@@ -16653,7 +16653,7 @@
     {
       "id": "1567267342818214003",
       "ts": "2026-11-03T20:00:52.947Z",
-      "author": "MEAThor",
+      "author": "Hakathor",
       "authorKey": "26cc49214293ef08",
       "kind": "human",
       "isStarter": false,
@@ -19507,6 +19507,29 @@
       "mentions": [],
       "edited": true,
       "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574396412001783901"
+    },
+    {
+      "id": "1574467798351085706",
+      "ts": "2026-11-23T16:52:55.324Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "alright, the stupid AI false flag has been removed.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "alright, the stupid AI false flag has been removed."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574467798351085706"
     }
   ]
 }
