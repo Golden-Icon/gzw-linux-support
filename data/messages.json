@@ -6,8 +6,8 @@
     "forumChannelId": "1561777693001777263",
     "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
   },
-  "scrapedAt": "2026-11-23T17:44:55.340Z",
-  "messageCount": 837,
+  "scrapedAt": "2026-11-24T19:03:10.793Z",
+  "messageCount": 971,
   "messages": [
     {
       "id": "1562744057388728382",
@@ -19530,6 +19530,3114 @@
       "mentions": [],
       "edited": false,
       "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574467798351085706"
+    },
+    {
+      "id": "1574616675855376496",
+      "ts": "2026-11-24T02:44:30.487Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Oh man, I wish I knew about this thread before starting my own. Could use some help/suggestions on how to remedy a problem I am having: ⁠Reading anything ( sticky's, le…",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Oh man, I wish I knew about this thread before starting my own. Could use some help/suggestions on how to remedy a problem I am having: ⁠Reading anything ( sticky's, le…"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574616675855376496"
+    },
+    {
+      "id": "1574743854626644080",
+      "ts": "2026-11-24T11:09:52.269Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "What hardware are you running?   Proton?  launch parameters?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "What hardware are you running?   Proton?  launch parameters?"
+        }
+      ],
+      "links": [],
+      "replyTo": "1574616675855376496",
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574743854626644080"
+    },
+    {
+      "id": "1574808003721428993",
+      "ts": "2026-11-24T15:24:46.605Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Hardware: Motherboard: ROG STRIX B550-F GAMING WIFI II\n, AMD Ryzen 5 5600 6-Core Processor , RAM: Corsair DDR4 3200 MT/s 32GB, Storage: Samsung SSD 990 PRO 2TB, GPU: NVIDIA GeForce RTX 4070 Super - 620.70.06 \n\nProton is set to GE-Proton11-7-x86_64 in Steam. I tried to use others but cut scenes in other games do not work well with other versions for some reason. I get an old CRT image when there is no programming available. I tried to use the Proton-GE Latest option, which is GE-Proton11-11 but game crashes on my system due to a Wine error that I haven't found a fix yet. It's the Assertion Failed error that people report from time to time.\n\nLaunch parameters are not set.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hardware: Motherboard: ROG STRIX B550-F GAMING WIFI II\n, AMD Ryzen 5 5600 6-Core Processor , RAM: Corsair DDR4 3200 MT/s 32GB, Storage: Samsung SSD 990 PRO 2TB, GPU: NVIDIA GeForce RTX 4070 Super - 620.70.06 \n\nProton is set to GE-Proton11-7-x86_64 in Steam. I tried to use others but cut scenes in other games do not work well with other versions for some reason. I get an old CRT image when there is no programming available. I tried to use the Proton-GE Latest option, which is GE-Proton11-11 but game crashes on my system due to a Wine error that I haven't found a fix yet. It's the Assertion Failed error that people report from time to time.\n\nLaunch parameters are not set."
+        }
+      ],
+      "links": [],
+      "replyTo": "1574743854626644080",
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574808003721428993"
+    },
+    {
+      "id": "1574812425361039514",
+      "ts": "2026-11-24T15:42:20.806Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Well,  I don't know if it's been addressed yet, but there is/was a known nvidia issue with textures blurring like mad.   IIRC, Yoda had a suggestion to set sharping to over 100..    Last time I played, it was still really terrible.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Well,  I don't know if it's been addressed yet, but there is/was a known nvidia issue with textures blurring like mad.   IIRC, Yoda had a suggestion to set sharping to over 100..    Last time I played, it was still really terrible."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574812425361039514"
+    },
+    {
+      "id": "1574812754307588167",
+      "ts": "2026-11-24T15:43:39.233Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "",
+      "segments": [],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "image.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574812754307588167"
+    },
+    {
+      "id": "1574813018284499065",
+      "ts": "2026-11-24T15:44:42.170Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "if you search the main community support 05 forum(where you originally posted) for blurry, there is a few posts where folks have found solutions, or work arounds that might work for you as well.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "if you search the main community support 05 forum(where you originally posted) for blurry, there is a few posts where folks have found solutions, or work arounds that might work for you as well."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813018284499065"
+    },
+    {
+      "id": "1574813046235336939",
+      "ts": "2026-11-24T15:44:48.834Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Hmm, I'll try it out. Anything to stop my game from locking up. It's so silly that it only happens when reading items in-game. Makes it a lot more difficult to get codes to places.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Hmm, I'll try it out. Anything to stop my game from locking up. It's so silly that it only happens when reading items in-game. Makes it a lot more difficult to get codes to places."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813046235336939"
+    },
+    {
+      "id": "1574813169723904073",
+      "ts": "2026-11-24T15:45:18.276Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Mine isn't an issue with blurry text, it's with a sudden FPS drop to an eventual freeze",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Mine isn't an issue with blurry text, it's with a sudden FPS drop to an eventual freeze"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813169723904073"
+    },
+    {
+      "id": "1574813176447631463",
+      "ts": "2026-11-24T15:45:19.879Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I'm not sure about the locking up.. are you getting any error messages?  Is it bringing  up the UE error reporting window?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I'm not sure about the locking up.. are you getting any error messages?  Is it bringing  up the UE error reporting window?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813176447631463"
+    },
+    {
+      "id": "1574813195959402497",
+      "ts": "2026-11-24T15:45:24.531Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "But maybe they are related",
+      "segments": [
+        {
+          "type": "text",
+          "text": "But maybe they are related"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813195959402497"
+    },
+    {
+      "id": "1574813271247163463",
+      "ts": "2026-11-24T15:45:42.481Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "No errors, just locks up and I am forced to kill the process to restart the game",
+      "segments": [
+        {
+          "type": "text",
+          "text": "No errors, just locks up and I am forced to kill the process to restart the game"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813271247163463"
+    },
+    {
+      "id": "1574813357645766730",
+      "ts": "2026-11-24T15:46:03.080Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yeah, I may be confusing wiht someone else I was helping..  too many pots on the stove... and working 3 different stoves right now. XD",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yeah, I may be confusing wiht someone else I was helping..  too many pots on the stove... and working 3 different stoves right now. XD"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813357645766730"
+    },
+    {
+      "id": "1574813362653634742",
+      "ts": "2026-11-24T15:46:04.274Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I had it sit for over 5 minutes to see if anything comes up, nothing. Couldn't find anything in the logs either",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I had it sit for over 5 minutes to see if anything comes up, nothing. Couldn't find anything in the logs either"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813362653634742"
+    },
+    {
+      "id": "1574813479997800490",
+      "ts": "2026-11-24T15:46:32.251Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I get it, plus all the flavors of Linux, they have their own fun things to deal with",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I get it, plus all the flavors of Linux, they have their own fun things to deal with"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574813479997800490"
+    },
+    {
+      "id": "1574814365368983739",
+      "ts": "2026-11-24T15:50:03.340Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "add PROTON_LOG=1 %command%",
+      "segments": [
+        {
+          "type": "text",
+          "text": "add PROTON_LOG=1 %command%"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574814365368983739"
+    },
+    {
+      "id": "1574814379176632381",
+      "ts": "2026-11-24T15:50:06.632Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "to your launch parameters.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "to your launch parameters."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574814379176632381"
+    },
+    {
+      "id": "1574814440506003558",
+      "ts": "2026-11-24T15:50:21.254Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "also, have you tried clearing your shader cache yet?  very bottom of your video settings.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "also, have you tried clearing your shader cache yet?  very bottom of your video settings."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574814440506003558"
+    },
+    {
+      "id": "1574814651957514423",
+      "ts": "2026-11-24T15:51:11.668Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yep, tried clearing the shader cache, still the same issues unfortunately. I'll try the logging. Do you know where the logs go? (edited)\nTuesday, November 24, 2026 at 10:51 AM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yep, tried clearing the shader cache, still the same issues unfortunately. I'll try the logging. Do you know where the logs go? (edited)Tuesday, November 24, 2026 at 10:51 AM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574814651957514423"
+    },
+    {
+      "id": "1574815037988802601",
+      "ts": "2026-11-24T15:52:43.705Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "we can force it where we want.\n\nPROTON_LOG=1 PROTON_LOG_DIR=/home/USERNAMEHERE %command%",
+      "segments": [
+        {
+          "type": "text",
+          "text": "we can force it where we want.\n\nPROTON_LOG=1 PROTON_LOG_DIR=/home/USERNAMEHERE %command%"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815037988802601"
+    },
+    {
+      "id": "1574815160953077862",
+      "ts": "2026-11-24T15:53:13.022Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "are you running any overlays?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "are you running any overlays?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815160953077862"
+    },
+    {
+      "id": "1574815228640763991",
+      "ts": "2026-11-24T15:53:29.160Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "what compositor are you using?  DE?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "what compositor are you using?  DE?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815228640763991"
+    },
+    {
+      "id": "1574815271737364581",
+      "ts": "2026-11-24T15:53:39.435Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "oh nice!\nNope, no overlays, I don't even like the steam overlay",
+      "segments": [
+        {
+          "type": "text",
+          "text": "oh nice!\nNope, no overlays, I don't even like the steam overlay"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815271737364581"
+    },
+    {
+      "id": "1574815374363467877",
+      "ts": "2026-11-24T15:54:03.903Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "x11/wayland?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "x11/wayland?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815374363467877"
+    },
+    {
+      "id": "1574815388758184078",
+      "ts": "2026-11-24T15:54:07.335Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "On fedora 45 and comes with the newest version of KDE/cinnamon, I believe it's 6.8 or above with wayland support by default",
+      "segments": [
+        {
+          "type": "text",
+          "text": "On fedora 45 and comes with the newest version of KDE/cinnamon, I believe it's 6.8 or above with wayland support by default"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815388758184078"
+    },
+    {
+      "id": "1574815675929731163",
+      "ts": "2026-11-24T15:55:15.802Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "fire the game up if you can, and go read documents.. there are quite a few at the base in the large house,  post it notes and what not..  open/read them and see if you can get it to freeze.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "fire the game up if you can, and go read documents.. there are quite a few at the base in the large house,  post it notes and what not..  open/read them and see if you can get it to freeze."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815675929731163"
+    },
+    {
+      "id": "1574815893609779311",
+      "ts": "2026-11-24T15:56:07.701Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yep, just launched. About to go try out the sharpening issue. It was set to 0 by default\nI set it to 100 and wow, the difference is pretty intence",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yep, just launched. About to go try out the sharpening issue. It was set to 0 by default\nI set it to 100 and wow, the difference is pretty intence"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574815893609779311"
+    },
+    {
+      "id": "1574816197168603247",
+      "ts": "2026-11-24T15:57:20.075Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I don't know how I was playing with that setting set at 0, but the game looked beautiful regardless.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I don't know how I was playing with that setting set at 0, but the game looked beautiful regardless."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574816197168603247"
+    },
+    {
+      "id": "1574816264939900971",
+      "ts": "2026-11-24T15:57:36.233Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yeah, UE5 does work.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yeah, UE5 does work."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574816264939900971"
+    },
+    {
+      "id": "1574816694952665252",
+      "ts": "2026-11-24T15:59:18.756Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I've noticed you mentioned 'cut scenes', since gzw doesn't have any, I'm guessing that means you're talking about other games?   Are you adjusting your default proton usage in the steam settings, or per game?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I've noticed you mentioned 'cut scenes', since gzw doesn't have any, I'm guessing that means you're talking about other games?   Are you adjusting your default proton usage in the steam settings, or per game?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574816694952665252"
+    },
+    {
+      "id": "1574817269874171925",
+      "ts": "2026-11-24T16:01:35.828Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "There is actually a small cut scene at the start where the different logos pop up. When the game first starts to load. If I set any other version of proton, it shows a multi colored image as if I was on a CRT and there was no programming/signal available (edited)\nTuesday, November 24, 2026 at 11:02 AM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "There is actually a small cut scene at the start where the different logos pop up. When the game first starts to load. If I set any other version of proton, it shows a multi colored image as if I was on a CRT and there was no programming/signal available (edited)Tuesday, November 24, 2026 at 11:02 AM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574817269874171925"
+    },
+    {
+      "id": "1574817375436406816",
+      "ts": "2026-11-24T16:02:00.996Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I have the universal default set to ge-proton11-7",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I have the universal default set to ge-proton11-7"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574817375436406816"
+    },
+    {
+      "id": "1574819018458538106",
+      "ts": "2026-11-24T16:08:32.723Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I took a very quick video of it for reference. Sadly issue is still there but a little more manageable. Was able to open up the notes over 20 times as opposed to 4-6.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I took a very quick video of it for reference. Sadly issue is still there but a little more manageable. Was able to open up the notes over 20 times as opposed to 4-6."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574819018458538106"
+    },
+    {
+      "id": "1574819111303782431",
+      "ts": "2026-11-24T16:08:54.859Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "so the game froze?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "so the game froze?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574819111303782431"
+    },
+    {
+      "id": "1574819363859603581",
+      "ts": "2026-11-24T16:09:55.073Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "No, but the stutter came back, albeit after a lot more use.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "No, but the stutter came back, albeit after a lot more use."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574819363859603581"
+    },
+    {
+      "id": "1574819420289769544",
+      "ts": "2026-11-24T16:10:08.527Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Leads me to believe it is graphics related",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Leads me to believe it is graphics related"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574819420289769544"
+    },
+    {
+      "id": "1574819446558564434",
+      "ts": "2026-11-24T16:10:14.790Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "throw your proton logs on pastebin and link it here.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "throw your proton logs on pastebin and link it here."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574819446558564434"
+    },
+    {
+      "id": "1574823218592620605",
+      "ts": "2026-11-24T16:25:14.113Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Huh, weird. I set proton log to 1, and the location after printing it out with PWD in the terminal... no logs written",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Huh, weird. I set proton log to 1, and the location after printing it out with PWD in the terminal... no logs written"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823218592620605"
+    },
+    {
+      "id": "1574823246203986037",
+      "ts": "2026-11-24T16:25:20.696Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I just tried it twice, and nothing",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I just tried it twice, and nothing"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823246203986037"
+    },
+    {
+      "id": "1574823288616652801",
+      "ts": "2026-11-24T16:25:30.808Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Maybe because there wasn't a crash?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Maybe because there wasn't a crash?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823288616652801"
+    },
+    {
+      "id": "1574823728515129508",
+      "ts": "2026-11-24T16:27:15.688Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "You did change the\"usernamehere\" to your username, right?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "You did change the\"usernamehere\" to your username, right?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823728515129508"
+    },
+    {
+      "id": "1574823750636019885",
+      "ts": "2026-11-24T16:27:20.962Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I was reading up on it, default location for logs is $HOME, and I see nothing there either",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I was reading up on it, default location for logs is $HOME, and I see nothing there either"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823750636019885"
+    },
+    {
+      "id": "1574823874330107918",
+      "ts": "2026-11-24T16:27:50.453Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yeah, of course, variables need to be set for that to work",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yeah, of course, variables need to be set for that to work   🙂"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574823874330107918"
+    },
+    {
+      "id": "1574824161757495377",
+      "ts": "2026-11-24T16:28:58.981Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "~/proton\n\nshould be a subfolder named proton in your home folder.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "~/proton\n\nshould be a subfolder named proton in your home folder."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574824161757495377"
+    },
+    {
+      "id": "1574824329076547647",
+      "ts": "2026-11-24T16:29:38.873Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yep, there isn't one. I manually created a \"proton_log\" dir in my home and pointed the location there",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yep, there isn't one. I manually created a \"proton_log\" dir in my home and pointed the location there"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574824329076547647"
+    },
+    {
+      "id": "1574825908873994273",
+      "ts": "2026-11-24T16:35:55.526Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "you forgot the %command% at the end of your launch parameter. \n\n\n\nPROTON_LOG=1 PROTON_LOG_DIR=/home/Comrade/proton_log %command%",
+      "segments": [
+        {
+          "type": "text",
+          "text": "you forgot the %command% at the end of your launch parameter."
+        },
+        {
+          "type": "code",
+          "text": "PROTON_LOG=1 PROTON_LOG_DIR=/home/Comrade/proton_log %command%"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574825908873994273"
+    },
+    {
+      "id": "1574825998447550598",
+      "ts": "2026-11-24T16:36:16.882Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "ohhh that's needed? I thought that was optional",
+      "segments": [
+        {
+          "type": "text",
+          "text": "ohhh that's needed? I thought that was optional"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574825998447550598"
+    },
+    {
+      "id": "1574826040528736288",
+      "ts": "2026-11-24T16:36:26.915Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Entirely my bad.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Entirely my bad."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574826040528736288"
+    },
+    {
+      "id": "1574826210016628908",
+      "ts": "2026-11-24T16:37:07.324Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "re-running the game with the command at the end (edited)\nTuesday, November 24, 2026 at 11:37 AM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "re-running the game with the command at the end (edited)Tuesday, November 24, 2026 at 11:37 AM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574826210016628908"
+    },
+    {
+      "id": "1574826442540191866",
+      "ts": "2026-11-24T16:38:02.762Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "open close notes again",
+      "segments": [
+        {
+          "type": "text",
+          "text": "open close notes again"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574826442540191866"
+    },
+    {
+      "id": "1574826506356531393",
+      "ts": "2026-11-24T16:38:17.977Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yep yep, loading into the game",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yep yep, loading into the game"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574826506356531393"
+    },
+    {
+      "id": "1574829361914187858",
+      "ts": "2026-11-24T16:49:38.795Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "so, fun stuff.... the log exceeds 512kb...",
+      "segments": [
+        {
+          "type": "text",
+          "text": "so, fun stuff.... the log exceeds 512kb..."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574829361914187858"
+    },
+    {
+      "id": "1574829494034768074",
+      "ts": "2026-11-24T16:50:10.295Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "The log is 12 MB",
+      "segments": [
+        {
+          "type": "text",
+          "text": "The log is 12 MB"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574829494034768074"
+    },
+    {
+      "id": "1574829681541251165",
+      "ts": "2026-11-24T16:50:55.000Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yesh, compress it and upload it where ever you like.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yesh, compress it and upload it where ever you like."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574829681541251165"
+    },
+    {
+      "id": "1574829895647756391",
+      "ts": "2026-11-24T16:51:46.047Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "This is \nsteam-2479810.log\n  right?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "This is"
+        },
+        {
+          "type": "code",
+          "text": "steam-2479810.log"
+        },
+        {
+          "type": "text",
+          "text": "right?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574829895647756391"
+    },
+    {
+      "id": "1574830005047922901",
+      "ts": "2026-11-24T16:52:12.130Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yeah that's it",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yeah that's it"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830005047922901"
+    },
+    {
+      "id": "1574830238762803311",
+      "ts": "2026-11-24T16:53:07.852Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "did it actually upload? Because in my end there is a bright red banner stating I exceeded the memory cap per file",
+      "segments": [
+        {
+          "type": "text",
+          "text": "did it actually upload? Because in my end there is a bright red banner stating I exceeded the memory cap per file"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830238762803311"
+    },
+    {
+      "id": "1574830357117796446",
+      "ts": "2026-11-24T16:53:36.070Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "no, that won't upload to pastebin.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "no, that won't upload to pastebin."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830357117796446"
+    },
+    {
+      "id": "1574830491935182922",
+      "ts": "2026-11-24T16:54:08.213Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "then how did you get the exact filename? (edited)\nTuesday, November 24, 2026 at 11:54 AM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "then how did you get the exact filename? (edited)Tuesday, November 24, 2026 at 11:54 AM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830491935182922"
+    },
+    {
+      "id": "1574830587598868522",
+      "ts": "2026-11-24T16:54:31.021Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "lol",
+      "segments": [
+        {
+          "type": "text",
+          "text": "lol"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830587598868522"
+    },
+    {
+      "id": "1574830636806438964",
+      "ts": "2026-11-24T16:54:42.753Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "that's the filename proton writes.  the #'s are the games ID on steam.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "that's the filename proton writes.  the #'s are the games ID on steam."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830636806438964"
+    },
+    {
+      "id": "1574830732726247484",
+      "ts": "2026-11-24T16:55:05.622Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "",
+      "segments": [],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "image.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830732726247484"
+    },
+    {
+      "id": "1574830733334286449",
+      "ts": "2026-11-24T16:55:05.767Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "ohh, so common name, gotcha. I was concerned there for a second",
+      "segments": [
+        {
+          "type": "text",
+          "text": "ohh, so common name, gotcha. I was concerned there for a second"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830733334286449"
+    },
+    {
+      "id": "1574830761180401837",
+      "ts": "2026-11-24T16:55:12.406Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "also, hackerman.   /S",
+      "segments": [
+        {
+          "type": "text",
+          "text": "also, hackerman.   /S"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830761180401837"
+    },
+    {
+      "id": "1574830848258084945",
+      "ts": "2026-11-24T16:55:33.167Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "hackerman all the way",
+      "segments": [
+        {
+          "type": "text",
+          "text": "hackerman all the way"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830848258084945"
+    },
+    {
+      "id": "1574830922140749886",
+      "ts": "2026-11-24T16:55:50.782Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I'll just gzip it and post it here if you want",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I'll just gzip it and post it here if you want"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574830922140749886"
+    },
+    {
+      "id": "1574831196565807116",
+      "ts": "2026-11-24T16:56:56.210Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "went from 12MB to 529kb",
+      "segments": [
+        {
+          "type": "text",
+          "text": "went from 12MB to 529kb"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831196565807116"
+    },
+    {
+      "id": "1574831279415890103",
+      "ts": "2026-11-24T16:57:15.963Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Sure",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Sure"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831279415890103"
+    },
+    {
+      "id": "1574831428678582353",
+      "ts": "2026-11-24T16:57:51.550Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I looked through it first of course for anything identifiable. Nothing sensitive in there that I could find",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I looked through it first of course for anything identifiable. Nothing sensitive in there that I could find"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831428678582353"
+    },
+    {
+      "id": "1574831476170694728",
+      "ts": "2026-11-24T16:58:02.873Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nah, but smart.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "nah, but smart."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831476170694728"
+    },
+    {
+      "id": "1574831807948390524",
+      "ts": "2026-11-24T16:59:21.975Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "are you running framegen?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "are you running framegen?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831807948390524"
+    },
+    {
+      "id": "1574831879016808560",
+      "ts": "2026-11-24T16:59:38.919Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yeah, 2x by default",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yeah, 2x by default"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574831879016808560"
+    },
+    {
+      "id": "1574832041407549571",
+      "ts": "2026-11-24T17:00:17.636Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I believe that's the max my card allows (4070 super)",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I believe that's the max my card allows (4070 super)"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574832041407549571"
+    },
+    {
+      "id": "1574832576408060127",
+      "ts": "2026-11-24T17:02:25.190Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "it is. \n\nTry this for me,  delete that log file, relaunch the game, and disable framegen at the main menu.  Then load into the game and open/close notes and see if you can get it to crash.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "it is. \n\nTry this for me,  delete that log file, relaunch the game, and disable framegen at the main menu.  Then load into the game and open/close notes and see if you can get it to crash."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574832576408060127"
+    },
+    {
+      "id": "1574832687439413354",
+      "ts": "2026-11-24T17:02:51.662Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "sure, give me a few",
+      "segments": [
+        {
+          "type": "text",
+          "text": "sure, give me a few"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574832687439413354"
+    },
+    {
+      "id": "1574833048908988560",
+      "ts": "2026-11-24T17:04:17.843Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "OOC, do you have mangohud installed?\n\ni'm seeing rate over 100ms, and the frame timer* being reset..   a LOT.\n\nseeing out of order frames as well.\n\nDo you hvae a framerate limit set, and do you have v-sync enabled? (edited)\nTuesday, November 24, 2026 at 12:06 PM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "OOC, do you have mangohud installed?\n\ni'm seeing rate over 100ms, and the frame timer* being reset..   a LOT.\n\nseeing out of order frames as well.\n\nDo you hvae a framerate limit set, and do you have v-sync enabled? (edited)Tuesday, November 24, 2026 at 12:06 PM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574833048908988560"
+    },
+    {
+      "id": "1574833565257043989",
+      "ts": "2026-11-24T17:06:20.950Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I do not have framerate limit set and no vsync enabled. I do not know what mangohud is but I can look in dnf if it is installed",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I do not have framerate limit set and no vsync enabled. I do not know what mangohud is but I can look in dnf if it is installed"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574833565257043989"
+    },
+    {
+      "id": "1574833849156899011",
+      "ts": "2026-11-24T17:07:28.637Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "When opening the notes, there is a significant stutter as you can see in the video from earlier",
+      "segments": [
+        {
+          "type": "text",
+          "text": "When opening the notes, there is a significant stutter as you can see in the video from earlier"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574833849156899011"
+    },
+    {
+      "id": "1574833997811548265",
+      "ts": "2026-11-24T17:08:04.079Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Maybe that is what is causing the resets? Because after a while, the game does lock up completely.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Maybe that is what is causing the resets? Because after a while, the game does lock up completely."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574833997811548265"
+    },
+    {
+      "id": "1574834162068623502",
+      "ts": "2026-11-24T17:08:43.241Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I just checked my settings, and the frame rate limit only exists when the game is in the background. otherwise it is set to unlimited.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I just checked my settings, and the frame rate limit only exists when the game is in the background. otherwise it is set to unlimited."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834162068623502"
+    },
+    {
+      "id": "1574834371750269039",
+      "ts": "2026-11-24T17:09:33.233Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "are you still seeing the stutter/freezing with dlss disabled?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "are you still seeing the stutter/freezing with dlss disabled?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834371750269039"
+    },
+    {
+      "id": "1574834453489127425",
+      "ts": "2026-11-24T17:09:52.721Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "about to find out, turned off framegen and cleared cache, loading into it now",
+      "segments": [
+        {
+          "type": "text",
+          "text": "about to find out, turned off framegen and cleared cache, loading into it now"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834453489127425"
+    },
+    {
+      "id": "1574834484228923514",
+      "ts": "2026-11-24T17:10:00.050Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "ack",
+      "segments": [
+        {
+          "type": "text",
+          "text": "ack"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834484228923514"
+    },
+    {
+      "id": "1574834833023311894",
+      "ts": "2026-11-24T17:11:23.209Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I think it's fixed! It was the damned framegen",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I think it's fixed! It was the damned framegen"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834833023311894"
+    },
+    {
+      "id": "1574834899322413147",
+      "ts": "2026-11-24T17:11:39.016Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Everything was silky smooth, opened the notes at least 15 times with no slowdowns at all",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Everything was silky smooth, opened the notes at least 15 times with no slowdowns at all"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574834899322413147"
+    },
+    {
+      "id": "1574836536892063955",
+      "ts": "2026-11-24T17:18:09.443Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Well, maybe.  but you did clear the cache at the same time.. so you introduced a 2nd variable.   \n\nYou can try to re-enable nvidia framegen,  or you can give FSR a stab and see how it performs for you.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Well, maybe.  but you did clear the cache at the same time.. so you introduced a 2nd variable.   😓  \n\nYou can try to re-enable nvidia framegen,  or you can give FSR a stab and see how it performs for you."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574836536892063955"
+    },
+    {
+      "id": "1574837735305248971",
+      "ts": "2026-11-24T17:22:55.167Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I have a 5080, and I don't really 'need' FG to play the game.. but I turn it on every now and then for shiggles.. and it is almost ALWAYS a terrible framey experience... Feels like a frame pacing issue.   I find that toggling it off/on when it does act up solves the issue for a little while.. but the games performance always seems run on a timer when I have FG on.   With that said, I've not tried FSR.   I'm just happier without it and my 50~80fps I get in the game.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I have a 5080, and I don't really 'need' FG to play the game.. but I turn it on every now and then for shiggles.. and it is almost ALWAYS a terrible framey experience... Feels like a frame pacing issue.   I find that toggling it off/on when it does act up solves the issue for a little while.. but the games performance always seems run on a timer when I have FG on.   With that said, I've not tried FSR.   I'm just happier without it and my 50~80fps I get in the game."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574837735305248971"
+    },
+    {
+      "id": "1574839058012569772",
+      "ts": "2026-11-24T17:28:10.525Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Isn't FSR specific to AMD cards?\nI did clear shaders when FG was on as well, and the issue was still present. That was in the first logs you got.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Isn't FSR specific to AMD cards?\nI did clear shaders when FG was on as well, and the issue was still present. That was in the first logs you got."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839058012569772"
+    },
+    {
+      "id": "1574839134684582032",
+      "ts": "2026-11-24T17:28:28.805Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "no, it's not.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "no, it's not."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839134684582032"
+    },
+    {
+      "id": "1574839214581874882",
+      "ts": "2026-11-24T17:28:47.854Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "it's what AMD uses ^and develops^, but is not specific to AMD. (edited)\nTuesday, November 24, 2026 at 12:29 PM",
+      "segments": [
+        {
+          "type": "text",
+          "text": "it's what AMD uses ^and develops^, but is not specific to AMD. (edited)Tuesday, November 24, 2026 at 12:29 PM"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": true,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839214581874882"
+    },
+    {
+      "id": "1574839494375383156",
+      "ts": "2026-11-24T17:29:54.562Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "FSR upscaling, is specific to AMD.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "FSR upscaling, is specific to AMD."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839494375383156"
+    },
+    {
+      "id": "1574839603578282159",
+      "ts": "2026-11-24T17:30:20.598Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "ahh ok, didn't realize that it's open source and gpu agnostic",
+      "segments": [
+        {
+          "type": "text",
+          "text": "ahh ok, didn't realize that it's open source and gpu agnostic"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839603578282159"
+    },
+    {
+      "id": "1574839730091069531",
+      "ts": "2026-11-24T17:30:50.761Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "yeah,  AMD is the cool kids who doesn't take their ball home with them.   Between freesync and FSR,  kinda goated.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "yeah,  AMD is the cool kids who doesn't take their ball home with them.   Between freesync and FSR,  kinda goated."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839730091069531"
+    },
+    {
+      "id": "1574839977970376907",
+      "ts": "2026-11-24T17:31:49.860Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "100% agree, I would have switched to an AMD card but the prices right now are outrageous and the 4070 I have is still kicking. I don't want to spend cash when I don't need to.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "100% agree, I would have switched to an AMD card but the prices right now are outrageous and the 4070 I have is still kicking. I don't want to spend cash when I don't need to."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574839977970376907"
+    },
+    {
+      "id": "1574840243922669690",
+      "ts": "2026-11-24T17:32:53.268Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I'll try playing with FR disabled and see how the rest of the game goes. I have a good feeling about this.\n\nThanks again for all the help, very much appreciated.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I'll try playing with FR disabled and see how the rest of the game goes. I have a good feeling about this.\n\nThanks again for all the help, very much appreciated."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574840243922669690"
+    },
+    {
+      "id": "1574840658135621793",
+      "ts": "2026-11-24T17:34:32.024Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Out of curiosity.  when you use fastfetch, does it show your 4070 as a super model?   or does it only list 4070? \n\nMine only says 4070.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Out of curiosity.  when you use fastfetch, does it show your 4070 as a super model?   or does it only list 4070? \n\nMine only says 4070."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "image.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574840658135621793"
+    },
+    {
+      "id": "1574841058997702838",
+      "ts": "2026-11-24T17:36:07.597Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "shows it as a super",
+      "segments": [
+        {
+          "type": "text",
+          "text": "shows it as a super"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841058997702838"
+    },
+    {
+      "id": "1574841145798696960",
+      "ts": "2026-11-24T17:36:28.292Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "",
+      "segments": [],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "fastfetch.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841145798696960"
+    },
+    {
+      "id": "1574841251000225933",
+      "ts": "2026-11-24T17:36:53.374Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I don't know why it's labeled as discrete though",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I don't know why it's labeled as discrete though"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841251000225933"
+    },
+    {
+      "id": "1574841362212192317",
+      "ts": "2026-11-24T17:37:19.889Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "WTH.   nvidia-smi shows it correctly, but I don't understand why FF doesn't.  weird.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "WTH.   nvidia-smi shows it correctly, but I don't understand why FF doesn't.  weird."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841362212192317"
+    },
+    {
+      "id": "1574841396953612409",
+      "ts": "2026-11-24T17:37:28.172Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "is it a laptop?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "is it a laptop?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841396953612409"
+    },
+    {
+      "id": "1574841463165026528",
+      "ts": "2026-11-24T17:37:43.958Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nah desktop",
+      "segments": [
+        {
+          "type": "text",
+          "text": "nah desktop"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841463165026528"
+    },
+    {
+      "id": "1574841493708079155",
+      "ts": "2026-11-24T17:37:51.240Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "maybe it's the driver that was loaded in?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "maybe it's the driver that was loaded in?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841493708079155"
+    },
+    {
+      "id": "1574841531767197727",
+      "ts": "2026-11-24T17:38:00.314Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "so it is a discrete video card.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "so it is a discrete video card."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841531767197727"
+    },
+    {
+      "id": "1574841585370276056",
+      "ts": "2026-11-24T17:38:13.094Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "it's not built into, or sharing video with a CPU.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "it's not built into, or sharing video with a CPU."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841585370276056"
+    },
+    {
+      "id": "1574841624108867767",
+      "ts": "2026-11-24T17:38:22.330Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "that'd be integrated.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "that'd be integrated."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841624108867767"
+    },
+    {
+      "id": "1574841933547708459",
+      "ts": "2026-11-24T17:39:36.106Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Oh I misunderstood the terminology, this makes sense. It's a standalone card that is added to the motherboard",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Oh I misunderstood the terminology, this makes sense. It's a standalone card that is added to the motherboard"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574841933547708459"
+    },
+    {
+      "id": "1574842032093003969",
+      "ts": "2026-11-24T17:39:59.601Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "back on your other point though, nvidia-smi doesn't show the \"super\". It kinda cuts it off.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "back on your other point though, nvidia-smi doesn't show the \"super\". It kinda cuts it off."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842032093003969"
+    },
+    {
+      "id": "1574842064871628865",
+      "ts": "2026-11-24T17:40:07.416Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "",
+      "segments": [],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "nvidia-smi.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842064871628865"
+    },
+    {
+      "id": "1574842373911879681",
+      "ts": "2026-11-24T17:41:21.097Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nvidia-smi --query-gpu=name --format=csv,noheader",
+      "segments": [
+        {
+          "type": "code",
+          "text": "nvidia-smi --query-gpu=name --format=csv,noheader"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842373911879681"
+    },
+    {
+      "id": "1574842487539761223",
+      "ts": "2026-11-24T17:41:48.188Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Comrade@Comrades-Fedora:~/proton_log$ nvidia-smi --query-gpu=name --format=csv,noheader\nNVIDIA GeForce RTX 4070 SUPER",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Comrade@Comrades-Fedora:~/proton_log$ nvidia-smi --query-gpu=name --format=csv,noheader\nNVIDIA GeForce RTX 4070 SUPER"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842487539761223"
+    },
+    {
+      "id": "1574842513364361311",
+      "ts": "2026-11-24T17:41:54.345Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "That prints it out",
+      "segments": [
+        {
+          "type": "text",
+          "text": "That prints it out"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842513364361311"
+    },
+    {
+      "id": "1574842531399733289",
+      "ts": "2026-11-24T17:41:58.645Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nods",
+      "segments": [
+        {
+          "type": "text",
+          "text": "nods"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842531399733289"
+    },
+    {
+      "id": "1574842563406602475",
+      "ts": "2026-11-24T17:42:06.276Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "So yeah, it shows it in both....",
+      "segments": [
+        {
+          "type": "text",
+          "text": "So yeah, it shows it in both...."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842563406602475"
+    },
+    {
+      "id": "1574842598592352297",
+      "ts": "2026-11-24T17:42:14.665Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "This is fun too. \n\n\nnvidia-smi --query-gpu=name,memory.total,driver_version --format=csv",
+      "segments": [
+        {
+          "type": "text",
+          "text": "This is fun too."
+        },
+        {
+          "type": "code",
+          "text": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842598592352297"
+    },
+    {
+      "id": "1574842730591293513",
+      "ts": "2026-11-24T17:42:46.136Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "oh nice, it shows the max memory and driver version, that's cool",
+      "segments": [
+        {
+          "type": "text",
+          "text": "oh nice, it shows the max memory and driver version, that's cool"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842730591293513"
+    },
+    {
+      "id": "1574842733502271549",
+      "ts": "2026-11-24T17:42:46.830Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 5080, 16303 MiB, 620.73.04\nNVIDIA GeForce RTX 4070 SUPER, 12282 MiB, 620.73.04\\",
+      "segments": [
+        {
+          "type": "text",
+          "text": "name, memory.total [MiB], driver_version\nNVIDIA GeForce RTX 5080, 16303 MiB, 620.73.04\nNVIDIA GeForce RTX 4070 SUPER, 12282 MiB, 620.73.04\\"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842733502271549"
+    },
+    {
+      "id": "1574842877303984334",
+      "ts": "2026-11-24T17:43:21.115Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Oh, you got both? Are you playing games with passthrough?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Oh, you got both? Are you playing games with passthrough?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574842877303984334"
+    },
+    {
+      "id": "1574843046464585789",
+      "ts": "2026-11-24T17:44:01.446Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nah,  I play games remotely with sunshine/moon light.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "nah,  I play games remotely with sunshine/moon light."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843046464585789"
+    },
+    {
+      "id": "1574843126353498225",
+      "ts": "2026-11-24T17:44:20.493Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "the TV stuff will render off the 4070.. and I game from the 5080.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "the TV stuff will render off the 4070.. and I game from the 5080."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843126353498225"
+    },
+    {
+      "id": "1574843169663881398",
+      "ts": "2026-11-24T17:44:30.819Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "ah gotcha",
+      "segments": [
+        {
+          "type": "text",
+          "text": "ah gotcha"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843169663881398"
+    },
+    {
+      "id": "1574843265646330018",
+      "ts": "2026-11-24T17:44:53.703Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I also have a blade in my server rack that hosts 3 4070's that my kids use while off to college.   We basically have our own geforce gaming setup.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I also have a blade in my server rack that hosts 3 4070's that my kids use while off to college.   We basically have our own geforce gaming setup."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843265646330018"
+    },
+    {
+      "id": "1574843475239637044",
+      "ts": "2026-11-24T17:45:43.674Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "That's pretty cool but i'd hate to see your cooling/electric bill!",
+      "segments": [
+        {
+          "type": "text",
+          "text": "That's pretty cool but i'd hate to see your cooling/electric bill!"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843475239637044"
+    },
+    {
+      "id": "1574843791880224820",
+      "ts": "2026-11-24T17:46:59.167Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "It's pretty performative as well.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "It's pretty performative as well."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [
+        {
+          "name": "image.png",
+          "type": "image"
+        }
+      ],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843791880224820"
+    },
+    {
+      "id": "1574843910075846857",
+      "ts": "2026-11-24T17:47:27.347Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "That must have been fun to setup. I'm jealous",
+      "segments": [
+        {
+          "type": "text",
+          "text": "That must have been fun to setup. I'm jealous"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843910075846857"
+    },
+    {
+      "id": "1574843992460361731",
+      "ts": "2026-11-24T17:47:46.989Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "My rack is in the hvac closet in the basement/shop area of my garage.   This time of year, it's bonus heating.. the rest of the year, it's extra heat is just pulled out with the rest of the house.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "My rack is in the hvac closet in the basement/shop area of my garage.   This time of year, it's bonus heating.. the rest of the year, it's extra heat is just pulled out with the rest of the house."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574843992460361731"
+    },
+    {
+      "id": "1574844290889285726",
+      "ts": "2026-11-24T17:48:58.140Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Ah, I live in california. While right now it is nice and cool, the rest of the year it's a bit more difficult to run any type of electronics without cooling. Especially since we can't have basements.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Ah, I live in california. While right now it is nice and cool, the rest of the year it's a bit more difficult to run any type of electronics without cooling. Especially since we can't have basements."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574844290889285726"
+    },
+    {
+      "id": "1574845071470108835",
+      "ts": "2026-11-24T17:52:04.245Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yeah, Georgia here, no stranger to the heat/humidity.. that's why getting the PC downstairs and out of the main house was such a big thing for me.   I hear people complain about their rooms heating up when gaming.. and that's never a problem for me.\n\nAnywho, good luck with the game!  Glad we were able to get you sorted out.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yeah, Georgia here, no stranger to the heat/humidity.. that's why getting the PC downstairs and out of the main house was such a big thing for me.   I hear people complain about their rooms heating up when gaming.. and that's never a problem for me.\n\nAnywho, good luck with the game!  Glad we were able to get you sorted out."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574845071470108835"
+    },
+    {
+      "id": "1574845221727109165",
+      "ts": "2026-11-24T17:52:40.069Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Thank you, and pleasure chatting with you.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Thank you, and pleasure chatting with you."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574845221727109165"
+    },
+    {
+      "id": "1574845395891257466",
+      "ts": "2026-11-24T17:53:21.593Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "we also have the ⁠🐧︱linux-chat  if you want to join us in there.   PRobaBLY where I shoudl have started this last conversation.   You'll have to take the linux role for the server to see it, though.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "we also have the ⁠🐧︱linux-chat  if you want to join us in there.   PRobaBLY where I shoudl have started this last conversation.   You'll have to take the linux role for the server to see it, though."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574845395891257466"
+    },
+    {
+      "id": "1574846174400221265",
+      "ts": "2026-11-24T17:56:27.204Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yeah it's blocked to me. I don't know where to go to grab the linux role",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yeah it's blocked to me. I don't know where to go to grab the linux role"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574846174400221265"
+    },
+    {
+      "id": "1574846251202256960",
+      "ts": "2026-11-24T17:56:45.515Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "That wasn't an option when first joining the discord as well",
+      "segments": [
+        {
+          "type": "text",
+          "text": "That wasn't an option when first joining the discord as well"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574846251202256960"
+    },
+    {
+      "id": "1574846501304279112",
+      "ts": "2026-11-24T17:57:45.144Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Top left of the channel list.  'Channels & Roles'",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Top left of the channel list.  'Channels & Roles'"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574846501304279112"
+    },
+    {
+      "id": "1574846569558184077",
+      "ts": "2026-11-24T17:58:01.417Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "asks what platform, windows or linux.   Selecting linux will show you the channel.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "asks what platform, windows or linux.   Selecting linux will show you the channel."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574846569558184077"
+    },
+    {
+      "id": "1574847123189539028",
+      "ts": "2026-11-24T18:00:13.413Z",
+      "author": "Comrade1809",
+      "authorKey": "457bcc01c88a2005",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "There it is! BTW, just cleared out a camp at a hidden poppy field, game runs so buttery smooth.\nI think the FG was the culprit. I don't know why nvidia makes it so hard to love it....",
+      "segments": [
+        {
+          "type": "text",
+          "text": "There it is! BTW, just cleared out a camp at a hidden poppy field, game runs so buttery smooth.\nI think the FG was the culprit. I don't know why nvidia makes it so hard to love it...."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574847123189539028"
     }
   ]
 }
