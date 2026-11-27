@@ -6,8 +6,8 @@
     "forumChannelId": "1561777693001777263",
     "url": "https://discord.com/channels/1166365362158313522/1562744057388728382"
   },
-  "scrapedAt": "2026-11-24T19:03:10.793Z",
-  "messageCount": 971,
+  "scrapedAt": "2026-11-27T13:33:50.633Z",
+  "messageCount": 980,
   "messages": [
     {
       "id": "1562744057388728382",
@@ -1097,8 +1097,8 @@
     {
       "id": "1563085167889875029",
       "ts": "2026-10-23T07:02:24.743Z",
-      "author": "[MFG] bluMEAT",
-      "authorKey": "f3e12438209c082f",
+      "author": "blufor",
+      "authorKey": "c552a9d19454cd33",
       "kind": "human",
       "isStarter": false,
       "isOp": false,
@@ -1143,8 +1143,8 @@
     {
       "id": "1563090061988204555",
       "ts": "2026-10-23T07:21:51.587Z",
-      "author": "[MFG] bluMEAT",
-      "authorKey": "6cab392a25627c3d",
+      "author": "blufor",
+      "authorKey": "c552a9d19454cd33",
       "kind": "human",
       "isStarter": false,
       "isOp": false,
@@ -3735,7 +3735,7 @@
         }
       ],
       "links": [],
-      "replyTo": "1563204557368987788",
+      "replyTo": null,
       "attachments": [],
       "embeds": [],
       "mentions": [],
@@ -22638,6 +22638,215 @@
       "mentions": [],
       "edited": false,
       "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574847123189539028"
+    },
+    {
+      "id": "1574924613631086733",
+      "ts": "2026-11-24T23:08:08.574Z",
+      "author": "Grimm",
+      "authorKey": "954c4df3cc7d446f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "hey guys, is something wrong with anti cheat?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "hey guys, is something wrong with anti cheat?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574924613631086733"
+    },
+    {
+      "id": "1574927905643823218",
+      "ts": "2026-11-24T23:21:13.451Z",
+      "author": "Grimm",
+      "authorKey": "954c4df3cc7d446f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "nevermid, probably just needed a reboot",
+      "segments": [
+        {
+          "type": "text",
+          "text": "nevermid, probably just needed a reboot"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574927905643823218"
+    },
+    {
+      "id": "1574938438291947612",
+      "ts": "2026-11-25T00:03:04.630Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Yeah, did you play a different game with EAC?    Arc Raiders?",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Yeah, did you play a different game with EAC?    Arc Raiders?"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574938438291947612"
+    },
+    {
+      "id": "1574940706001395845",
+      "ts": "2026-11-25T00:12:05.294Z",
+      "author": "Grimm",
+      "authorKey": "954c4df3cc7d446f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "no",
+      "segments": [
+        {
+          "type": "text",
+          "text": "no"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574940706001395845"
+    },
+    {
+      "id": "1574940819087953941",
+      "ts": "2026-11-25T00:12:32.256Z",
+      "author": "Grimm",
+      "authorKey": "954c4df3cc7d446f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "I have only played GZW",
+      "segments": [
+        {
+          "type": "text",
+          "text": "I have only played GZW"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574940819087953941"
+    },
+    {
+      "id": "1574940888612741152",
+      "ts": "2026-11-25T00:12:48.832Z",
+      "author": "./GoldenIcon.sh",
+      "authorKey": "4032fcc7bdbe645f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "hmm,  I\"ve had issues switching between games that are using different version of EAC.  But there's always the possibility for things to go sideways and the machine need a reboot I suppose.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "hmm,  I\"ve had issues switching between games that are using different version of EAC.  But there's always the possibility for things to go sideways and the machine need a reboot I suppose."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574940888612741152"
+    },
+    {
+      "id": "1574946791705804821",
+      "ts": "2026-11-25T00:36:16.239Z",
+      "author": "Grimm",
+      "authorKey": "954c4df3cc7d446f",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "maybe it was a Proton update or something that broke it temporarily, anyway I has some system updates so all is well for now",
+      "segments": [
+        {
+          "type": "text",
+          "text": "maybe it was a Proton update or something that broke it temporarily, anyway I has some system updates so all is well for now"
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1574946791705804821"
+    },
+    {
+      "id": "1575640960195633257",
+      "ts": "2026-11-26T22:34:38.904Z",
+      "author": "jz",
+      "authorKey": "39c7cb312b2120e5",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Anyone knows whats up with VOIP? I see the option to enable it, but I don't hear anyone.",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Anyone knows whats up with VOIP? I see the option to enable it, but I don't hear anyone."
+        }
+      ],
+      "links": [],
+      "replyTo": null,
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1575640960195633257"
+    },
+    {
+      "id": "1575675669445087273",
+      "ts": "2026-11-27T00:52:34.234Z",
+      "author": "Bonk",
+      "authorKey": "e302f289c46068c2",
+      "kind": "human",
+      "isStarter": false,
+      "isOp": false,
+      "content": "Known issue. Try this fix It worked for me\nhttps://github.com/Golden-Icon/GZW-0.5-VOIP-FIX/",
+      "segments": [
+        {
+          "type": "text",
+          "text": "Known issue. Try this fix It worked for me\nhttps://github.com/Golden-Icon/GZW-0.5-VOIP-FIX/"
+        }
+      ],
+      "links": [
+        "https://github.com/Golden-Icon/GZW-0.5-VOIP-FIX/"
+      ],
+      "replyTo": "1575640960195633257",
+      "attachments": [],
+      "embeds": [],
+      "mentions": [],
+      "edited": false,
+      "url": "https://discord.com/channels/1166365362158313522/1562744057388728382/1575675669445087273"
     }
   ]
 }
